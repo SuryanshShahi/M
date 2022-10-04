@@ -107,11 +107,11 @@ function Home() {
       </div>
       <div
         className="row gx-0"
-        style={{ borderTop: "1px solid rgb(105 110 121 / 33%)" }}
+        style={{ borderTop: "1px solid rgb(105 110 121 / 14%)" }}
       >
         <div
           className="col-lg-2 gx-0 pt-3 sidebar"
-          style={{ borderRight: "1px solid rgb(105 110 121 / 33%)" }}
+          style={{ borderRight: "1px solid rgb(105 110 121 / 14%)" }}
         >
           <div style={{ top: "0", position: "sticky" }}>
             <div className="pl-4">
@@ -158,7 +158,7 @@ function Home() {
               </div>
             </div>
 
-            <hr></hr>
+            <hr style={{height:"0.5px"}}></hr>
 
             <div className="pl-4">
               <span
@@ -634,7 +634,7 @@ function Home() {
         >
           <div
             className=""
-            style={{ borderRight: "1px solid rgb(105 110 121 / 33%)" }}
+            style={{ borderRight: "1px solid rgb(105 110 121 / 14%)" }}
           >
             <div>
               <div
