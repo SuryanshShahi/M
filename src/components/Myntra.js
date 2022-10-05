@@ -3,6 +3,7 @@ import { NavLink, useParams } from "react-router-dom";
 import CardSkeleton from "./CardSkeleton";
 
 function Home() {
+  window.scroll(0, 0);
   const params = useParams();
   const [isActive, setActive] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -158,7 +159,7 @@ function Home() {
               </div>
             </div>
 
-            <hr style={{height:"0.5px"}}></hr>
+            <hr style={{ height: "0.5px" }}></hr>
 
             <div className="pl-4">
               <span
