@@ -39,13 +39,13 @@ function Navbar() {
               className="navbar-nav align-items-center d-flex mb-2 mb-lg-0 pl-3"
               style={{ width: "100%" }}
             >
-            <li
-            style={{ width: "fit-content", fontSize: "14px" }}
-            className="nav-item px-2"
-          >
-            <NavLink to="/" className="nav-link text-dark font-weight-bold">
-              MEN
-            </NavLink>
+              <li
+                style={{ width: "fit-content", fontSize: "14px" }}
+                className="nav-item px-2"
+              >
+                <NavLink to="/" className="nav-link text-dark font-weight-bold">
+                  MEN
+                </NavLink>
 
                 <div className="dropdown-menu menu rounded-0 border-0">
                   <div className="row pl-2 mr-2 pr-1">
@@ -84,7 +84,6 @@ function Navbar() {
                 </div>
               </li>
 
-             
               <li
                 style={{ width: "fit-content", fontSize: "14px" }}
                 className="nav-item px-2"
@@ -157,14 +156,24 @@ function Navbar() {
             <div className="list-unstyled align-items-center justify-content-center py-lg-0 py-4 d-flex ml-lg-auto mb-2 mb-lg-0 d-flex">
               <div className="px-3" style={{ width: "fit-content" }}>
                 <div className=" text-center">
-                  <div className="fa fa-user-o" style={{fontSize:"17px"}}></div>
-                  <div style={{ fontSize: "12px" }}>Profile</div>
+                  <div
+                    className="fa fa-user-o"
+                    style={{ fontSize: "17px" }}
+                  ></div>
+                  <div style={{ fontSize: "12px" }}>
+                    <b>Profile</b>
+                  </div>
                 </div>
               </div>
               <div className="px-3" style={{ width: "fit-content" }}>
                 <div className=" text-center">
-                  <div className="fa fa-heart-o" style={{fontSize:"17px"}}></div>
-                  <div style={{ fontSize: "12px" }}>WhishList</div>
+                  <div
+                    className="fa fa-heart-o"
+                    style={{ fontSize: "17px" }}
+                  ></div>
+                  <div style={{ fontSize: "12px" }}>
+                    <b>WhishList</b>
+                  </div>
                 </div>
               </div>
               <div
@@ -175,18 +184,20 @@ function Navbar() {
                   to={`/myntra/${1}/bag`}
                   className="fa fa-shopping-bag text-decoration-none text-dark"
                 >
-                  {" "}
-                  <div className="text-center pt-2" style={{fontSize:"17px"}}>
-                    <div style={{ fontSize: "12px" }}>Bag</div>
+                  <div className="text-center font-weight-bold pt-2">
+                    <div style={{ fontSize: "12px" }}>
+                      <b>Bag</b>
+                    </div>
                   </div>
                 </NavLink>
                 <span
                   className="badge bg-danger position-absolute ml-3 mb-2"
                   style={{
-                    fontSize: "12px",
+                    fontSize: "10px",
                     height: "fit-content",
                     borderRadius: "50px",
                     top: "-5px",
+                    left: "11px",
                   }}
                 >
                   1
