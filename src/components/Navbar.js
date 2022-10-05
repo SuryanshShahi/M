@@ -32,7 +32,7 @@ function Navbar() {
           </div>
 
           <div
-            className="collapse navbar-collapse px-lg-5"
+            className="collapse navbar-collapse pl-lg-5"
             id="navbarSupportedContent"
           >
             <ul
@@ -134,7 +134,7 @@ function Navbar() {
 
               <li className="nav-item searchbar pl-lg-5 w-50 pt-lg-0 pt-3">
                 {" "}
-                <form className="d-flex align-items-center">
+                <form className="d-flex align-items-center pr-lg-4">
                   <div
                     className="fa fa-search pl-3"
                     style={{
@@ -144,7 +144,7 @@ function Navbar() {
                     }}
                   ></div>
                   <input
-                    className="form-control pl-5 me-2 position-relative w-100"
+                    className="form-control pl-5 me-2 position-relative w-100 border-0"
                     type="search"
                     placeholder="Search for products, brands and more"
                     aria-label="Search"
@@ -157,13 +157,13 @@ function Navbar() {
             <div className="list-unstyled align-items-center justify-content-center py-lg-0 py-4 d-flex ml-lg-auto mb-2 mb-lg-0 d-flex">
               <div className="px-3" style={{ width: "fit-content" }}>
                 <div className=" text-center">
-                  <div className="fa fa-user-circle-o fa-lg"></div>
+                  <div className="fa fa-user-o" style={{fontSize:"17px"}}></div>
                   <div style={{ fontSize: "12px" }}>Profile</div>
                 </div>
               </div>
               <div className="px-3" style={{ width: "fit-content" }}>
                 <div className=" text-center">
-                  <div className="fa fa-heart-o fa-lg"></div>
+                  <div className="fa fa-heart-o" style={{fontSize:"17px"}}></div>
                   <div style={{ fontSize: "12px" }}>WhishList</div>
                 </div>
               </div>
@@ -173,10 +173,10 @@ function Navbar() {
               >
                 <NavLink
                   to={`/myntra/${1}/bag`}
-                  className="fa fa-shopping-bag fa-lg text-decoration-none text-dark"
+                  className="fa fa-shopping-bag text-decoration-none text-dark"
                 >
                   {" "}
-                  <div className="text-center pt-2">
+                  <div className="text-center pt-2" style={{fontSize:"17px"}}>
                     <div style={{ fontSize: "12px" }}>Bag</div>
                   </div>
                 </NavLink>

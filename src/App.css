@@ -39,20 +39,19 @@
   font-size: 1.8em;
 } 
 button {
-  border: none !important;
+  /* border: none !important;
   padding: 1.8px !important;
   background-color: #eee;
   outline: none !important;
   width: 50px !important;
-  margin: 10px !important;
-}
-[type="button"].active {
-  background-color: black;
-}
-.carousel-control-prev {
+  margin: 10px !important; */
   display: none;
 }
-.carousel-control-next {
+/* [type="button"].active {
+  background-color: black;
+} */
+
+.visually-hidden{
   display: none;
 }
 .dealsRow {
