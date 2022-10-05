@@ -172,7 +172,7 @@ function Navbar() {
                 style={{ width: "fit-content" }}
               >
                 <NavLink
-                  to={`/products/${1}/bag`}
+                  to={`/myntra/${1}/bag`}
                   className="fa fa-shopping-bag fa-lg text-decoration-none text-dark"
                 >
                   {" "}

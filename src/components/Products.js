@@ -146,7 +146,7 @@ function Products() {
                 </div>
                 <div className="justify-content-lg-start justify-content-center d-flex">
                   <NavLink
-                    to={`/products/${id}/bag`}
+                    to={`/myntra/${id}/bag`}
                     className="btn btn-danger mt-4 mb-3 px-5 py-3 addBtn"
                     style={{ width: "285px" }}
                   >
@@ -391,7 +391,7 @@ function Products() {
                     >
                       <NavLink
                         target="_blank"
-                        to={`/products/${e.id}`}
+                        to={`/myntra/${e.id}`}
                         className="justify-content-center d-flex"
                       >
                         <div>

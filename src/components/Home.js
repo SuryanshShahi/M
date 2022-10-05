@@ -66,7 +66,7 @@ function Home() {
           <div className="d-flex">
             {Deals.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     style={{ width: "25.4vh", height: "37vh" }}
@@ -89,7 +89,7 @@ function Home() {
         <div className="d-flex">
           {Brands.map((image) => (
             <div className="" style={{ padding: "0" }}>
-              <NavLink to="/products">
+              <NavLink to="/myntra">
                 <img
                   src={image}
                   alt="Deals of the day"
@@ -104,7 +104,7 @@ function Home() {
       <div className="d-flex">
         {Brands1.map((image) => (
           <div className="" style={{ padding: "0" }}>
-            <NavLink to="/products">
+            <NavLink to="/myntra">
               <img
                 src={image}
                 alt="Deals of the day"
@@ -123,7 +123,7 @@ function Home() {
           <div className="d-flex">
             {TopPicks.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -142,7 +142,7 @@ function Home() {
           <div className="d-flex">
             {categories.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -157,7 +157,7 @@ function Home() {
           <div className="d-flex">
             {categories1.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -172,7 +172,7 @@ function Home() {
           <div className="d-flex">
             {categories2.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -191,7 +191,7 @@ function Home() {
           <div className="d-flex">
             {TopBrands.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -206,7 +206,7 @@ function Home() {
           <div className="d-flex">
             {TopBrands1.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -221,7 +221,7 @@ function Home() {
           <div className="d-flex">
             {TopBrands2.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -240,7 +240,7 @@ function Home() {
           <div className="d-flex">
             {SlashedPrice.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -255,7 +255,7 @@ function Home() {
           <div className="d-flex">
             {SlashedPrice1.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -274,7 +274,7 @@ function Home() {
           <div className="d-flex">
             {BestBuys.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -289,7 +289,7 @@ function Home() {
           <div className="d-flex">
             {BestBuys1.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -308,7 +308,7 @@ function Home() {
           <div className="d-flex">
             {MyntraLuxe.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -323,7 +323,7 @@ function Home() {
           <div className="d-flex">
             {MyntraLuxe1.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -342,7 +342,7 @@ function Home() {
           <div className="d-flex">
             {GiftCards.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -361,7 +361,7 @@ function Home() {
           <div className="d-flex">
             {FirstOnMyntra.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -376,7 +376,7 @@ function Home() {
           <div className="d-flex">
             {FirstOnMyntra1.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -395,7 +395,7 @@ function Home() {
           <div className="d-flex">
             {HottestFinds.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -414,7 +414,7 @@ function Home() {
           <div className="d-flex">
             {TrendsForHer.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -433,7 +433,7 @@ function Home() {
           <div className="d-flex">
             {TrendsForHim.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -452,7 +452,7 @@ function Home() {
           <div className="d-flex">
             {Kidswear.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -471,7 +471,7 @@ function Home() {
           <div className="d-flex">
             {NewBrands.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -490,7 +490,7 @@ function Home() {
           <div className="d-flex">
             {SpringSeason.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -509,7 +509,7 @@ function Home() {
           <div className="d-flex">
             {occasion.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -524,7 +524,7 @@ function Home() {
           <div className="d-flex">
             {occasion1.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -543,7 +543,7 @@ function Home() {
           <div className="d-flex">
             {Grooming.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -558,7 +558,7 @@ function Home() {
           <div className="d-flex">
             {Grooming1.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -577,7 +577,7 @@ function Home() {
           <div className="d-flex">
             {Unmissable.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -596,7 +596,7 @@ function Home() {
         <div className="d-flex">
           {Colours.map((image) => (
             <div className="" style={{ padding: "0" }}>
-              <NavLink to="/products">
+              <NavLink to="/myntra">
                 <img
                   src={image}
                   alt="Deals of the day"
@@ -611,7 +611,7 @@ function Home() {
       <div className="d-flex">
         {Colours1.map((image) => (
           <div className="" style={{ padding: "0" }}>
-            <NavLink to="/products">
+            <NavLink to="/myntra">
               <img
                 src={image}
                 alt="Deals of the day"
@@ -630,7 +630,7 @@ function Home() {
           <div className="d-flex">
             {Influencers.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -649,7 +649,7 @@ function Home() {
           <div className="d-flex">
             {BudgetPicks.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
@@ -668,7 +668,7 @@ function Home() {
           <div className="d-flex">
             {TrendingOutfits.map((image) => (
               <div className="" style={{ padding: "0" }}>
-                <NavLink to="/products">
+                <NavLink to="/myntra">
                   <img
                     src={image}
                     alt="Deals of the day"
