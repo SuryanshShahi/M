@@ -19,12 +19,12 @@ const App = () => {
     <section>
       <div className="app">
         <Switch>
-          <Route exact path="/myntra/:id/bag" component={Bag} />
+          <Route exact path="/products/:id/bag" component={Bag} />
           <div>
             <Navbar />
             <Route exact path="/" component={Home} />
             <Route exact path="/myntra" component={Myntra} />
-            <Route exact path="/myntra/:id" component={Products} />
+            <Route exact path="/products/:id" component={Products} />
           </div>
         </Switch>
         <Footer />

@@ -422,7 +422,7 @@ function Home() {
                       >
                         <NavLink
                           target="_blank"
-                          to={`/myntra/${e.id}`}
+                          to={`/products/${e.id}`}
                           className="justify-content-center d-flex"
                         >
                           <div>
