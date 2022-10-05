@@ -23,7 +23,7 @@ const App = () => {
           <div>
             <Navbar />
             <Route exact path="/" component={Home} />
-            <Route path="/myntra" component={Myntra} />
+            <Route path="/products" component={Myntra} />
             <Route path="/products/:id" component={Products} />
           </div>
         </Switch>
