@@ -67,8 +67,10 @@ button {
   overflow: hidden;
   min-height: 390px;
   border: none;
-  box-shadow: 1px 2px 5px 0px #aaaaaa;
   color: black;
+}
+.carscard:hover{
+  box-shadow: 0px 0px 10px 0px #c0c0c087;
 }
 
 .details {
@@ -120,6 +122,10 @@ input[type="radio"] {
 
 
 
+/* ------------------Myntra----------------- */
+.topTags:hover{
+  background: rgb(212 213 217 / 43%)
+}
 /* ------------------LandingPage----------------- */
 
 #LandingPage .container::-webkit-scrollbar {

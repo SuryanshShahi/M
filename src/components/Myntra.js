@@ -53,37 +53,40 @@ function Home() {
           <div className="col-10">
             <div className="d-flex mt-3">
               <div
-                className="px-3 align-items-center d-flex"
+                className="px-3   align-items-center d-flex topTags"
                 style={{
                   outline: "none",
-                  background: "rgb(212 213 217 / 43%)",
-                  fontWeight: "500",
+                  transition: "0.5s",
+                  cursor: "pointer",
                   borderRadius: "30px",
+                  fontSize: "14px",
                 }}
               >
-                Bundles
+                Bundles<span className="pl-2 fa fa-angle-down"></span>
               </div>
               <div
-                className="px-3 align-items-center d-flex mx-2"
+                className="px-3   align-items-center d-flex topTags mx-2"
                 style={{
                   outline: "none",
-                  background: "rgb(212 213 217 / 43%)",
-                  fontWeight: "500",
+                  transition: "0.5s",
+                  cursor: "pointer",
                   borderRadius: "30px",
+                  fontSize: "14px",
                 }}
               >
-                Country of Origin
+                Country of Origin<span className="pl-2 fa fa-angle-down"></span>
               </div>
               <div
-                className="px-3 align-items-center d-flex"
+                className="px-3   align-items-center d-flex topTags"
                 style={{
                   outline: "none",
-                  background: "rgb(212 213 217 / 43%)",
-                  fontWeight: "500",
+                  transition: "0.5s",
+                  cursor: "pointer",
                   borderRadius: "30px",
+                  fontSize: "14px",
                 }}
               >
-                Size
+                Size<span className="pl-2 fa fa-angle-down"></span>
               </div>
               <select
                 className="w-25 py-1 px-2 ml-auto mr-4"
@@ -417,16 +420,18 @@ function Home() {
                       key={e.id}
                     >
                       <div
-                        className="card carscard text-decoration-none mx-3 mt-1"
+                        className="card rounded-0 carscard text-decoration-none mx-3 mt-1"
                         data-bs-toggle="tooltip"
                         title={e.title}
                       >
+                       
+
                         <NavLink
                           target="_blank"
                           to={`/myntra/${e.id}`}
                           className="justify-content-center d-flex"
                         >
-                          <div>
+                          <div className="">
                             <img
                               src={e.image}
                               alt="menuPic"
@@ -493,6 +498,21 @@ function Home() {
                           </div>
                         </div>
                         <div className="px-2">
+                        <div className="">
+                        <div
+                          className="text-white rounded"
+                          style={{
+                            width:"fit-content",
+                            padding: "3px 5px",
+                            background: "rgb(0,0,0,0.6",
+                            fontSize: "12px",
+                          }}
+                        >
+                          4.3{" "}
+                          <span className="fa fa-star text-success"></span> |
+                          4.1k
+                        </div>
+                      </div>
                           <div className="font-weight-bolder my-2">
                             <span style={{ fontWeight: "500" }}>{e.title}</span>
                             <div
