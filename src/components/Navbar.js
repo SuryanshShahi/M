@@ -267,7 +267,7 @@ function Navbar() {
                       <div
                         className="ml-auto fa-2x pt-2 text-white"
                         onClick={() => setShow(false)}
-                        style={{ lineHeight: "0",marginRight:"-4px" }}
+                        style={{ lineHeight: "0", marginRight: "-4px" }}
                       >
                         &times;
                       </div>
@@ -278,7 +278,7 @@ function Navbar() {
                     </div>
                   </div>
 
-                  <div className="" style={{ fontSize: "12px" }}>
+                  <div className="" style={{ fontSize: "15px" }}>
                     <div
                       className="px-3"
                       style={{ fontWeight: "600", color: "black" }}
@@ -383,16 +383,16 @@ function Navbar() {
           <div className="navbar-nav w-100 py-lg-3 px-3">
             <div className="align-items-center d-flex">
               <div
-                className="fa fa-bars fa-md pr-3"
+                className="fa fa-bars fa-md pr-3"          style={{ fontSize: "18px" }}
                 onClick={() => setShow(true)}
               ></div>
-              <div style={{ fontWeight: "500" }}>Myntra</div>
+              <div style={{ fontWeight: "500", fontSize:"18px" }}>Myntra</div>
               <div className="list-unstyled ml-auto align-items-center justify-content-center d-flex">
                 <div className="px-2" style={{ width: "fit-content" }}>
                   <div className=" text-center">
                     <div
                       className="fa fa-bookmark-o"
-                      style={{ fontSize: "17px" }}
+                      style={{ fontSize: "18px" }}
                     ></div>
                   </div>
                 </div>
@@ -400,7 +400,7 @@ function Navbar() {
                   <div className=" text-center">
                     <div
                       className="fa fa-search"
-                      style={{ fontSize: "17px" }}
+                      style={{ fontSize: "18px" }}
                     ></div>
                   </div>
                 </div>
@@ -408,7 +408,7 @@ function Navbar() {
                   <div className=" text-center">
                     <div
                       className="fa fa-heart-o"
-                      style={{ fontSize: "17px" }}
+                      style={{ fontSize: "18px" }}
                     ></div>
                   </div>
                 </div>
@@ -419,6 +419,7 @@ function Navbar() {
                   <NavLink
                     to={`/myntra/${1}/bag`}
                     className="fa fa-shopping-bag text-decoration-none text-dark"
+                    style={{ fontSize: "18px" }}
                   ></NavLink>
                   <span
                     className="badge bg-danger position-absolute ml-3 mb-2"

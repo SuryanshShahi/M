@@ -216,7 +216,7 @@ input[type="radio"] {
 }
 @media (max-width: 575px) {
   .navbar-nav{
-    padding: 10px 0px;
+    padding: 15px 0px;
   }
 }
 @media (max-width: 350px) {
