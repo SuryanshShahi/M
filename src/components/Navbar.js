@@ -273,7 +273,7 @@ function Navbar() {
                       </div>
                     </div>
                     <div className="d-flex align-items-center pt-2">
-                      <div className="text-white shadow-lg">Nikhil</div>
+                      <div className="text-white shadow-lg">user</div>
                       <div className="ml-auto fa fa-angle-right text-white"></div>
                     </div>
                   </div>
