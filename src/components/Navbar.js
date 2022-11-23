@@ -383,10 +383,10 @@ function Navbar() {
           <div className="navbar-nav w-100 py-lg-3 px-3">
             <div className="align-items-center d-flex">
               <div
-                className="fa fa-bars fa-md pr-3"          style={{ fontSize: "18px" }}
+                className="fa fa-bars fa-md pr-3"         style={{ fontSize: "18px" }}
                 onClick={() => setShow(true)}
               ></div>
-              <div style={{ fontWeight: "500", fontSize:"18px" }}>Myntra</div>
+              <div style={{ fontWeight: "500",fontSize:"18px" }}>Myntra</div>
               <div className="list-unstyled ml-auto align-items-center justify-content-center d-flex">
                 <div className="px-2" style={{ width: "fit-content" }}>
                   <div className=" text-center">

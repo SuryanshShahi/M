@@ -10,7 +10,6 @@ import Myntra from "./components/Myntra";
 import Footer from "./components/Footer";
 import Products from "./components/Products";
 import Bag from "./components/Bag";
-import ABC from "./components/abc";
 
 const App = () => {
   useEffect(() => {
@@ -34,7 +33,6 @@ const App = () => {
   );
 };
 export default App;
-
 
 
 

@@ -3,7 +3,6 @@ import { NavLink, useParams } from "react-router-dom";
 import CardSkeleton from "./CardSkeleton";
 
 function Home() {
-  window.scroll(0, 0);
   const params = useParams();
   const [isActive, setActive] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -53,40 +52,37 @@ function Home() {
           <div className="col-10">
             <div className="d-flex mt-3">
               <div
-                className="px-3   align-items-center d-flex topTags"
+                className="px-3 align-items-center d-flex"
                 style={{
                   outline: "none",
-                  transition: "0.5s",
-                  cursor: "pointer",
+                  background: "rgb(212 213 217 / 43%)",
+                  fontWeight: "500",
                   borderRadius: "30px",
-                  fontSize: "14px",
                 }}
               >
-                Bundles<span className="pl-2 fa fa-angle-down"></span>
+                Bundles
               </div>
               <div
-                className="px-3   align-items-center d-flex topTags mx-2"
+                className="px-3 align-items-center d-flex mx-2"
                 style={{
                   outline: "none",
-                  transition: "0.5s",
-                  cursor: "pointer",
+                  background: "rgb(212 213 217 / 43%)",
+                  fontWeight: "500",
                   borderRadius: "30px",
-                  fontSize: "14px",
                 }}
               >
-                Country of Origin<span className="pl-2 fa fa-angle-down"></span>
+                Country of Origin
               </div>
               <div
-                className="px-3   align-items-center d-flex topTags"
+                className="px-3 align-items-center d-flex"
                 style={{
                   outline: "none",
-                  transition: "0.5s",
-                  cursor: "pointer",
+                  background: "rgb(212 213 217 / 43%)",
+                  fontWeight: "500",
                   borderRadius: "30px",
-                  fontSize: "14px",
                 }}
               >
-                Size<span className="pl-2 fa fa-angle-down"></span>
+                Size
               </div>
               <select
                 className="w-25 py-1 px-2 ml-auto mr-4"
@@ -111,11 +107,11 @@ function Home() {
       </div>
       <div
         className="row gx-0"
-        style={{ borderTop: "1px solid rgb(105 110 121 / 14%)" }}
+        style={{ borderTop: "1px solid rgb(105 110 121 / 33%)" }}
       >
         <div
           className="col-lg-2 gx-0 pt-3 sidebar"
-          style={{ borderRight: "1px solid rgb(105 110 121 / 14%)" }}
+          style={{ borderRight: "1px solid rgb(105 110 121 / 33%)" }}
         >
           <div style={{ top: "0", position: "sticky" }}>
             <div className="pl-4">
@@ -162,7 +158,7 @@ function Home() {
               </div>
             </div>
 
-            <hr style={{ height: "0.5px" }}></hr>
+            <hr></hr>
 
             <div className="pl-4">
               <span
@@ -420,18 +416,16 @@ function Home() {
                       key={e.id}
                     >
                       <div
-                        className="card rounded-0 carscard text-decoration-none mx-3 mt-1"
+                        className="card carscard text-decoration-none mx-3 mt-1"
                         data-bs-toggle="tooltip"
                         title={e.title}
                       >
-                       
-
                         <NavLink
                           target="_blank"
                           to={`/myntra/${e.id}`}
                           className="justify-content-center d-flex"
                         >
-                          <div className="">
+                          <div>
                             <img
                               src={e.image}
                               alt="menuPic"
@@ -498,21 +492,6 @@ function Home() {
                           </div>
                         </div>
                         <div className="px-2">
-                        <div className="">
-                        <div
-                          className="text-white rounded"
-                          style={{
-                            width:"fit-content",
-                            padding: "3px 5px",
-                            background: "rgb(0,0,0,0.6",
-                            fontSize: "12px",
-                          }}
-                        >
-                          4.3{" "}
-                          <span className="fa fa-star text-success"></span> |
-                          4.1k
-                        </div>
-                      </div>
                           <div className="font-weight-bolder my-2">
                             <span style={{ fontWeight: "500" }}>{e.title}</span>
                             <div
@@ -655,7 +634,7 @@ function Home() {
         >
           <div
             className=""
-            style={{ borderRight: "1px solid rgb(105 110 121 / 14%)" }}
+            style={{ borderRight: "1px solid rgb(105 110 121 / 33%)" }}
           >
             <div>
               <div
