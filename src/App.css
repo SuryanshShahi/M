@@ -1,6 +1,7 @@
 .slider::-webkit-scrollbar,
 .sidebar::-webkit-scrollbar,
 .content::-webkit-scrollbar,
+.drawer::-webkit-scrollbar,
 .dealsRow::-webkit-scrollbar {
   width: 0px;
   height: 0px;
@@ -8,7 +9,15 @@
 
 
 
-
+.openModal:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  content: '';
+}
 .nav-item:hover .dropdown-menu {
   display: block;
 }
@@ -24,8 +33,20 @@
   font-size: 13px;
   color: #00000096;
 }
+@keyframes fadeNav {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 
-
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.drawer{
+  animation: fadeNav 0.4s linear forwards;
+}
 
 
 
@@ -38,18 +59,9 @@
   font-weight: 500;
   font-size: 1.8em;
 } 
-button {
-  /* border: none !important;
-  padding: 1.8px !important;
-  background-color: #eee;
-  outline: none !important;
-  width: 50px !important;
-  margin: 10px !important; */
+.carousel-indicators button {
   display: none;
 }
-/* [type="button"].active {
-  background-color: black;
-} */
 
 .visually-hidden{
   display: none;
@@ -200,6 +212,11 @@ input[type="radio"] {
   }
   #products {
     margin-top: 70px !important;
+  }
+}
+@media (max-width: 575px) {
+  .navbar-nav{
+    padding: 10px 0px;
   }
 }
 @media (max-width: 350px) {

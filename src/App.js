@@ -10,6 +10,7 @@ import Myntra from "./components/Myntra";
 import Footer from "./components/Footer";
 import Products from "./components/Products";
 import Bag from "./components/Bag";
+import ABC from "./components/abc";
 
 const App = () => {
   useEffect(() => {
@@ -19,15 +20,15 @@ const App = () => {
     <section>
       <div className="app">
         <Switch>
-          <Route exact path="/myntra/:id/bag" component={Bag} />
-          <div>
-            <Navbar />
-            <Route exact path="/" component={Home} />
-            <Route exact path="/myntra" component={Myntra} />
-            <Route exact path="/myntra/:id" component={Products} />
-          </div>
-        </Switch>
-        <Footer />
+        <Route exact path="/myntra/:id/bag" component={Bag} />
+        <div>
+          <Navbar />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/myntra" component={Myntra} />
+          <Route exact path="/myntra/:id" component={Products} />
+        </div>
+      </Switch>
+<Footer />        
       </div>
     </section>
   );
