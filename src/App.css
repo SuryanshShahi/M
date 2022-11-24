@@ -11,8 +11,21 @@
   display: block;
   animation: fadeIn 0.4s linear forwards;
 }
-.nav-item:hover #changeArrow {
- transform: rotate(90deg);
+.collapsed #changeArrow {
+ transform: rotate(0deg);
+}
+#changeArrow {
+  transform: rotate(90deg);
+ }
+.accordion-button{
+  width: 100%;
+  background: none;
+  font-size: 1rem;
+  border: 0;
+  outline: none;
+}
+button:focus{
+  outline: none;
 }
 .backdrop {
   background-color: rgba(0, 0, 0, 0.5);
@@ -24,8 +37,11 @@
   position: fixed;
 }
 #drawer li{
-  padding-left: 12px;
+  padding-left: 16px;
   padding-top: 8px;
+}
+#alignInnerMenu{
+  padding-left: 12px;
 }
 @keyframes fadeIn {
   0% {
