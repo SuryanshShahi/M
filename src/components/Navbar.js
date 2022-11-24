@@ -3,11 +3,13 @@ import { NavLink } from "react-router-dom";
 import logo from "./images/myntra.png";
 import app from "./images/downloadApp.jpeg";
 import Accordion from "react-bootstrap/Accordion";
-import { sidebar } from "../Data/Data";
+import { search, sidebar } from "../Data/Data";
 
 function Navbar() {
   const [isactive, setActive] = useState(false);
   const [show, setShow] = useState(false);
+  const [heading, setHeading] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const changeNav = () => {
@@ -37,6 +39,10 @@ function Navbar() {
     setShow(false);
   };
 
+  const changeHeading = (e) => {
+    setHeading(e.target.value);
+    setSearchTerm(e.target.value);
+  };
   return (
     <section id="navbar">
       {!isactive ? (
@@ -1020,7 +1026,7 @@ function Navbar() {
 
                 <li className="nav-item searchbar w-50 pl-lg-5 pt-lg-0 pt-3">
                   {" "}
-                  <form className="d-flex align-items-center pr-lg-4">
+                  <form className="d-flex align-items-center position-relative">
                     <div
                       className="fa fa-search pl-3"
                       style={{
@@ -1034,8 +1040,38 @@ function Navbar() {
                       type="search"
                       placeholder="Search for products, brands and more"
                       aria-label="Search"
+                      onChange={changeHeading}
                       style={{ background: "rgb(241 241 241)" }}
                     />
+                    <div
+                      className="bg-white search position-absolute"
+                      style={{
+                        boxShadow:"0px 1px 0px 1px #c0c0c042",
+                        height: "fit-content",
+                        maxHeight: "60vh",
+                        overflowY: "scroll",
+                        top: "38px",
+                        width:"100%",
+                        zIndex: 6,
+                      }}
+                    >
+                      {search
+                        .filter((e) => {
+                          if (searchTerm === "") {
+                            return;
+                          } else if (e.toLowerCase().includes(searchTerm.toLowerCase())) {
+                            return e;
+                          }
+                        })
+                        .map((e) => {
+                          return (
+                            <NavLink to="/" className="text-decoration-none ">
+                              <div className="py-2 pl-3 item" style={{color:"#343a40b0"}}>{e}</div>
+                            </NavLink>
+                          );
+                        })}
+                    </div>
+
                   </form>
                 </li>
               </ul>
@@ -1306,6 +1342,8 @@ function Navbar() {
           <div></div>
         )}
       </div>
+
+     
     </section>
   );
 }
