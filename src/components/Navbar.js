@@ -1203,7 +1203,7 @@ function Navbar() {
               </div>
 
               <div className="" style={{ fontSize: "15px" }}>
-                <div className="px-3">
+                <div className="px-3 pt-2 pb-1">
                   <Accordion flush>
                     <Accordion.Item eventKey="0">
                       <Accordion.Header>
