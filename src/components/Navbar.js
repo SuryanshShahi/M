@@ -3,13 +3,14 @@ import { NavLink } from "react-router-dom";
 import logo from "./images/myntra.png";
 import app from "./images/downloadApp.jpeg";
 import Accordion from "react-bootstrap/Accordion";
-import { search, sidebar } from "../Data/Data";
+import { search, sidebar, Deals } from "../Data/Data";
 
 function Navbar() {
   const [isactive, setActive] = useState(false);
   const [show, setShow] = useState(false);
   const [heading, setHeading] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
+  const [searchBar, setSearchBar] = useState(false);
 
   useEffect(() => {
     const changeNav = () => {
@@ -1046,12 +1047,12 @@ function Navbar() {
                     <div
                       className="bg-white search position-absolute"
                       style={{
-                        boxShadow:"0px 1px 0px 1px #c0c0c042",
+                        boxShadow: "0px 1px 0px 1px #c0c0c042",
                         height: "fit-content",
                         maxHeight: "60vh",
                         overflowY: "scroll",
                         top: "38px",
-                        width:"100%",
+                        width: "100%",
                         zIndex: 6,
                       }}
                     >
@@ -1059,19 +1060,25 @@ function Navbar() {
                         .filter((e) => {
                           if (searchTerm === "") {
                             return;
-                          } else if (e.toLowerCase().includes(searchTerm.toLowerCase())) {
+                          } else if (
+                            e.toLowerCase().includes(searchTerm.toLowerCase())
+                          ) {
                             return e;
                           }
                         })
                         .map((e) => {
                           return (
                             <NavLink to="/" className="text-decoration-none ">
-                              <div className="py-2 pl-3 item" style={{color:"#343a40b0"}}>{e}</div>
+                              <div
+                                className="py-2 pl-3 item"
+                                style={{ color: "#343a40b0" }}
+                              >
+                                {e}
+                              </div>
                             </NavLink>
                           );
                         })}
                     </div>
-
                   </form>
                 </li>
               </ul>
@@ -1163,9 +1170,159 @@ function Navbar() {
                   </div>
                 </div>
                 <div className="px-2" style={{ width: "fit-content" }}>
+                  <div className="">
+                    {searchBar ? (
+                      <li
+                        className="position-absolute"
+                        style={{
+                          overflowY: "scroll",
+                          height: "100vh",
+                          width: "100%",
+                          left: 0,
+                          background: "#eee",
+                          top: 0,
+                          zIndex: 9,
+                        }}
+                      >
+                        <form
+                          className="d-flex align-items-center position-relative"
+                          style={{ boxShadow: "0px 0px 0px 1px #c0c0c094" }}
+                        >
+                          <div
+                            className="fa fa-arrow-left position-absolute fa-lg pl-2"
+                            onClick={() => setSearchBar(false)}
+                            style={{
+                              zIndex: "8",
+                              color: "black",
+                            }}
+                          ></div>
+                          <input
+                            className="form-control bg-white rounded-0 shadow-none w-100 border-0"
+                            type="search"
+                            placeholder="Search for brands & products"
+                            onChange={changeHeading}
+                            style={{
+                              height: "45px",
+                              paddingLeft: "40px",
+                              zIndex: 7,
+                            }}
+                          />
+                          <div className="justify-content-end d-flex">
+                            <div
+                              className="fa fa-search text-danger align-items-center d-flex bg-white fa-lg px-3"
+                              style={{
+                                zIndex: "7",
+                                height: "45px",
+                              }}
+                            ></div>
+                          </div>
+                          <div
+                            className="bg-white search position-absolute"
+                            style={{
+                              boxShadow: "0px 1px 0px 1px #c0c0c042",
+                              height: "fit-content",
+                              maxHeight: "60vh",
+                              overflowY: "scroll",
+                              top: "38px",
+                              width: "100%",
+                              zIndex: 6,
+                            }}
+                          >
+                            {search
+                              .filter((e) => {
+                                if (searchTerm === "") {
+                                  return;
+                                } else if (
+                                  e
+                                    .toLowerCase()
+                                    .includes(searchTerm.toLowerCase())
+                                ) {
+                                  return e;
+                                }
+                              })
+                              .map((e) => {
+                                return (
+                                  <NavLink
+                                    to="/"
+                                    className="text-decoration-none "
+                                  >
+                                    <div
+                                      className="py-2 pl-3 item"
+                                      style={{ color: "#343a40b0" }}
+                                    >
+                                      {e}
+                                    </div>
+                                  </NavLink>
+                                );
+                              })}
+                          </div>
+                        </form>
+
+                        <div
+                          className="bg-white my-3 p-2"
+                          style={{ boxShadow: "0px 0px 0px 1px #c0c0c094" }}
+                        >
+                          <h2 className="py-1" style={{ fontSize: "12px", fontWeight:"500" }}>
+                            RECENT SEARCHES
+                          </h2>
+                          <div className="dealsRow">
+                            <div className="d-flex">
+                              {Deals.map((image) => (
+                                <div className="pr-3" style={{ padding: "0" }}>
+                                  <NavLink to="/myntra">
+                                    <img
+                                      src={image}
+                                      style={{
+                                        width: "70px",
+                                        height: "70px",
+                                        borderRadius: "50px",
+                                      }}
+                                      alt="Deals of the day"
+                                    />
+                                  </NavLink>
+                                  <div className="text-center pt-2" style={{fontSize:"12px"}}>Name</div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          className="bg-white my-3 p-2"
+                          style={{ boxShadow: "0px 0px 0px 1px #c0c0c094" }}
+                        >
+                          <h2 className="py-1" style={{ fontSize: "12px" }}>
+                           TRENDING ON MYNTRA
+                          </h2>
+                          <div className="dealsRow">
+                            <div className="d-flex">
+                              {Deals.map((image) => (
+                                <div className="" style={{ padding: "0" }}>
+                                  <NavLink to="/myntra">
+                                    <img
+                                      src={image}
+                                      style={{
+                                        width: "20vh",
+                                        height: "30vh",
+                                      }}
+                                      alt="Deals of the day"
+                                    />
+                                  </NavLink>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    ) : (
+                      <div></div>
+                    )}
+                  </div>
+
                   <div className=" text-center">
                     <div
                       className="fa fa-search"
+                      onClick={() => setSearchBar(true)}
                       style={{ fontSize: "18px" }}
                     ></div>
                   </div>
@@ -1342,8 +1499,6 @@ function Navbar() {
           <div></div>
         )}
       </div>
-
-     
     </section>
   );
 }
