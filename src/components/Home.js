@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import {
@@ -44,8 +44,12 @@ import Donate from "./images/Donation.webp";
 import Spotlight from "./images/spotlight.gif";
 
 function Home() {
+
+
+
   return (
     <div style={{ marginTop: "100px" }}>
+    <div className="backdrop" id="backdrop">.</div>
       <div className="my-5">
         <Carousel>
           {Banner.map((e) => (

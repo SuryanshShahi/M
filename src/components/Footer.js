@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <section style={{ background: "#FAFBFC" }}>
+    <section id="footer" style={{ background: "#FAFBFC" }}>
       <div className="container mb-5">
         <div className="row" style={{ fontSize: "14px", color: "#696B79" }}>
           <div className="col-lg-2 col-md-3 col-6 mt-5">

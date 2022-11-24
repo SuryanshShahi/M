@@ -46,6 +46,7 @@ export const TopPicks = [
   "/images/TOP PICKS/shirts.webp",
   "/images/TOP PICKS/T-shirts.webp",
   "/images/TOP PICKS/trousers.webp",
+  "/images/TOP PICKS/dresses.webp",
 ];
 export const categories = [
   "/images/CATEGORIES TO BAG/Bath-Essentials.webp",
@@ -115,6 +116,7 @@ export const SlashedPrice = [
   "/images/BRANDS AT SLASHED PRICES/ether.webp",
   "/images/BRANDS AT SLASHED PRICES/Harvard.webp",
   "/images/BRANDS AT SLASHED PRICES/House-of-Pataudi.webp",
+  "/images/BRANDS AT SLASHED PRICES/All-about-you.webp",
 ];
 export const SlashedPrice1 = [
   "/images/BRANDS AT SLASHED PRICES/HRX.webp",
@@ -124,6 +126,7 @@ export const SlashedPrice1 = [
   "/images/BRANDS AT SLASHED PRICES/Moda-Rapido_1.webp",
   "/images/BRANDS AT SLASHED PRICES/Roadster.webp",
   "/images/BRANDS AT SLASHED PRICES/Sangria.webp",
+  "/images/BRANDS AT SLASHED PRICES/HRX.webp",
 ];
 export const BestBuys = [
   "/images/BEST BUYS/1.webp",
@@ -229,6 +232,7 @@ export const Kidswear = [
   "/images/BEST OF KIDSWEAR/5.webp",
   "/images/BEST OF KIDSWEAR/6.webp",
   "/images/BEST OF KIDSWEAR/7.jpg",
+  "/images/BEST OF KIDSWEAR/1.webp",
 ];
 export const NewBrands = [
   "/images/NEW IN TOP BRANDS/1.webp",
@@ -238,6 +242,7 @@ export const NewBrands = [
   "/images/NEW IN TOP BRANDS/5.webp",
   "/images/NEW IN TOP BRANDS/6.webp",
   "/images/NEW IN TOP BRANDS/7.webp",
+  "/images/NEW IN TOP BRANDS/1.webp",
 ];
 export const SpringSeason = [
   "/images/SPRING SUMMER SEASON CHECKLIST/1.webp",
@@ -254,24 +259,28 @@ export const occasion = [
   "/images/NEWNESS FOR EVERY OCCASION/2.webp",
   "/images/NEWNESS FOR EVERY OCCASION/3.webp",
   "/images/NEWNESS FOR EVERY OCCASION/4.webp",
+  "/images/NEWNESS FOR EVERY OCCASION/1.webp",
 ];
 export const occasion1 = [
   "/images/NEWNESS FOR EVERY OCCASION/5.webp",
   "/images/NEWNESS FOR EVERY OCCASION/6.webp",
   "/images/NEWNESS FOR EVERY OCCASION/7.webp",
   "/images/NEWNESS FOR EVERY OCCASION/8.webp",
+  "/images/NEWNESS FOR EVERY OCCASION/5.webp",
 ];
 export const Grooming = [
   "/images/LATEST IN BEAUTY & GROOMING/1.webp",
   "/images/LATEST IN BEAUTY & GROOMING/2.webp",
   "/images/LATEST IN BEAUTY & GROOMING/3.webp",
   "/images/LATEST IN BEAUTY & GROOMING/4.webp",
+  "/images/LATEST IN BEAUTY & GROOMING/1.webp",
 ];
 export const Grooming1 = [
   "/images/LATEST IN BEAUTY & GROOMING/5.webp",
   "/images/LATEST IN BEAUTY & GROOMING/6.webp",
   "/images/LATEST IN BEAUTY & GROOMING/7.webp",
   "/images/LATEST IN BEAUTY & GROOMING/8.webp",
+  "/images/LATEST IN BEAUTY & GROOMING/5.webp",
 ];
 export const Unmissable = [
   "/images/UNMISSABLE THIS SEASON/1.webp",
@@ -288,12 +297,14 @@ export const Colours = [
   "/images/COLOURS OF THE SEASON/2.webp",
   "/images/COLOURS OF THE SEASON/3.webp",
   "/images/COLOURS OF THE SEASON/4.jpg",
+  "/images/COLOURS OF THE SEASON/1.webp",
 ];
 export const Colours1 = [
   "/images/COLOURS OF THE SEASON/5.webp",
   "/images/COLOURS OF THE SEASON/6.webp",
   "/images/COLOURS OF THE SEASON/7.webp",
   "/images/COLOURS OF THE SEASON/8.webp",
+  "/images/COLOURS OF THE SEASON/5.webp",
 ];
 export const Influencers = [
   "/images/TOP INFLUENCERS EXCLUSIVE STYLES/1.webp",
@@ -302,6 +313,8 @@ export const Influencers = [
   "/images/TOP INFLUENCERS EXCLUSIVE STYLES/4.gif",
   "/images/TOP INFLUENCERS EXCLUSIVE STYLES/5.webp",
   "/images/TOP INFLUENCERS EXCLUSIVE STYLES/6.webp",
+  "/images/TOP INFLUENCERS EXCLUSIVE STYLES/1.webp",
+  "/images/TOP INFLUENCERS EXCLUSIVE STYLES/2.webp",
 ];
 export const BudgetPicks = [
   "/images/BUDGET PICKS INFLUENCERS LOVE/1.jpg",

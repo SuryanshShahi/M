@@ -7,31 +7,63 @@
   height: 0px;
 }
 
-
-
-.openModal:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  content: '';
-}
 .nav-item:hover .dropdown-menu {
   display: block;
+  animation: fadeIn 0.4s linear forwards;
 }
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .dropdown-menu {
-  box-shadow: 0px 0px 2px 0px grey;
-  /* margin-top: 0px !important; */
-  width: 1248px;
-  padding: 0;
+  opacity: 1;
+  background-color: transparent !important;
+  top: 55px;
+  left: 0;
 }
+.dropdown-menu .row {
+  width: 70vw;
+}
+
 .dropdown-menu li {
-  padding: 5px;
+  padding: 5px 0px;
   font-family: Roboto, Arial, sans-serif;
-  font-size: 13px;
-  color: #00000096;
+  font-size: 14px;
+}
+
+@media (max-width: 990px) {
+  .dropdown-menu .row {
+    width: fit-content;
+  }
+  .navbar-collapse{
+    overflow-y: scroll;
+    height: 80vh;
+  }
+}
+@media (max-width: 575px) {
+  /* .backdrop{
+    display: none !important;
+  } */
+  .navbar-nav {
+    padding: 15px 0px;
+  }
 }
 @keyframes fadeNav {
   0% {
@@ -44,26 +76,20 @@
     transform: translateX(0);
   }
 }
-.drawer{
+.drawer {
   animation: fadeNav 0.4s linear forwards;
 }
-
-
-
-
-
-
 
 .title {
   color: #3e4152;
   font-weight: 500;
   font-size: 1.8em;
-} 
+}
 .carousel-indicators button {
   display: none;
 }
 
-.visually-hidden{
+.visually-hidden {
   display: none;
 }
 .dealsRow {
@@ -81,7 +107,7 @@
   border: none;
   color: black;
 }
-.carscard:hover{
+.carscard:hover {
   box-shadow: 0px 0px 10px 0px #c0c0c087;
 }
 
@@ -107,7 +133,6 @@
   border: 1px solid black;
 }
 
-
 .SelectSize {
   border-radius: 50px;
   border: 1px solid #bfc0c6;
@@ -130,13 +155,9 @@ input[type="radio"] {
   display: none;
 }
 
-
-
-
-
 /* ------------------Myntra----------------- */
-.topTags:hover{
-  background: rgb(212 213 217 / 43%)
+.topTags:hover {
+  background: rgb(212 213 217 / 43%);
 }
 /* ------------------LandingPage----------------- */
 
@@ -214,11 +235,7 @@ input[type="radio"] {
     margin-top: 70px !important;
   }
 }
-@media (max-width: 575px) {
-  .navbar-nav{
-    padding: 15px 0px;
-  }
-}
+
 @media (max-width: 350px) {
   .addtobag {
     justify-content: center;
