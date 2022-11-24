@@ -1208,7 +1208,7 @@ function Navbar() {
                     <NavLink to="/" className="nav-link text-dark">
                       <div
                         className="d-flex align-items-center"
-                        style={{ fontWeight: "500" }}
+                        style={{ fontWeight: "500",fontSize:"1rem" }}
                       >
                         Men
                         <div className="ml-auto">
@@ -1364,7 +1364,7 @@ function Navbar() {
                     <NavLink to="/" className="nav-link text-dark">
                       <div
                         className="d-flex align-items-center"
-                        style={{ fontWeight: "500" }}
+                        style={{ fontWeight: "500",fontSize:"1rem" }}
                       >
                         Women
                         <div className="ml-auto">
@@ -1556,7 +1556,7 @@ function Navbar() {
                     <NavLink to="/" className="nav-link text-dark">
                       <div
                         className="d-flex align-items-center"
-                        style={{ fontWeight: "500" }}
+                        style={{ fontWeight: "500",fontSize:"1rem" }}
                       >
                         kids
                         <div className="ml-auto">
@@ -1729,7 +1729,7 @@ function Navbar() {
                     <NavLink to="/" className="nav-link text-dark">
                       <div
                         className="d-flex align-items-center"
-                        style={{ fontWeight: "500" }}
+                        style={{ fontWeight: "500",fontSize:"1rem" }}
                       >
                         Home & Living
                         <div className="ml-auto">
@@ -1910,7 +1910,7 @@ function Navbar() {
                     <NavLink to="/" className="nav-link text-dark">
                       <div
                         className="d-flex align-items-center"
-                        style={{ fontWeight: "500" }}
+                        style={{ fontWeight: "500",fontSize:"1rem" }}
                       >
                         Beauty
                         <div className="ml-auto">
