@@ -1686,7 +1686,7 @@ function Navbar() {
                               </div>
                             </div>
                           </div>
-                          <div className="col-12">
+                          <div className="col-12 pt-3">
                             <div className="" style={{ color: "orangered" }}>
                               <div style={{ fontWeight: "500" }}>
                                 Kids Accessories
@@ -1977,7 +1977,7 @@ function Navbar() {
                               <div style={{ fontWeight: "500" }}>Masks</div>
                             </div>
                           </div>
-                          <div className="col-12">
+                          <div className="col-12 pt-3">
                             <div className="" style={{ color: "#069ebf" }}>
                               <div style={{ fontWeight: "500" }}>Haircare</div>
                             </div>
