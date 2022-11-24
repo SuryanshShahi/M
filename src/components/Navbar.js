@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "./images/myntra.png";
 import app from "./images/downloadApp.jpeg";
+import { sidebar } from "../Data/Data";
 
 function Navbar() {
   const [isactive, setActive] = useState(false);
@@ -34,6 +35,7 @@ function Navbar() {
     document.body.style.overflowY = "auto";
     setShow(false);
   };
+
   return (
     <section id="navbar">
       {!isactive ? (
@@ -111,7 +113,6 @@ function Navbar() {
                             <li>Suits</li>
                             <li>Rain Jackets</li>
                           </ul>
-                          <hr style={{ color: "grey" }}></hr>
                           <div className="text-danger">
                             <div style={{ fontWeight: "500" }}>
                               Indian & festive Wear
@@ -198,10 +199,7 @@ function Navbar() {
                             <div style={{ fontWeight: "500" }}>Watches</div>
                           </div>
                         </div>
-                        <div
-                          className="col-lg-3 col-6 pb-5 px-4 pt-2"
-                          style={{ backgroundColor: "#f9f9f9" }}
-                        >
+                        <div className="col-lg-3 col-6 pb-5 px-4 pt-2">
                           <div className="text-danger">
                             <div style={{ fontWeight: "500" }}>
                               Fashion Accessories
@@ -367,10 +365,7 @@ function Navbar() {
                             <li>Sports Equipment</li>
                           </ul>
                         </div>
-                        <div
-                          className="col px-4 pt-2 pb-5"
-                          style={{ backgroundColor: "#f9f9f9" }}
-                        >
+                        <div className="col px-4 pt-2 pb-5">
                           <div className="" style={{ color: "magenta" }}>
                             <div style={{ fontWeight: "500" }}>
                               Lingerie & Sleepwear
@@ -559,10 +554,7 @@ function Navbar() {
                             <li>Action Figure / Play set</li>
                           </ul>
                         </div>
-                        <div
-                          className="col px-4 pt-2 pb-5"
-                          style={{ backgroundColor: "#f9f9f9" }}
-                        >
+                        <div className="col px-4 pt-2 pb-5">
                           <div className="" style={{ color: "orangered" }}>
                             <div style={{ fontWeight: "500" }}>Infants</div>
                           </div>
@@ -756,10 +748,7 @@ function Navbar() {
                             <div style={{ fontWeight: "500" }}>Curtains</div>
                           </div>
                         </div>
-                        <div
-                          className="col px-4 pt-2 pb-5"
-                          style={{ backgroundColor: "#f9f9f9" }}
-                        >
+                        <div className="col px-4 pt-2 pb-5">
                           <div className="" style={{ color: "#e7bc00" }}>
                             <div style={{ fontWeight: "500" }}>
                               Home Gift Sets
@@ -932,10 +921,7 @@ function Navbar() {
                             <li>Body Mist</li>
                           </ul>
                         </div>
-                        <div
-                          className="col px-4 pt-2 pb-5"
-                          style={{ backgroundColor: "#f9f9f9" }}
-                        >
+                        <div className="col px-4 pt-2 pb-5">
                           <div className="" style={{ color: "#069ebf" }}>
                             <div style={{ fontWeight: "500" }}>Appliances</div>
                           </div>
@@ -1119,7 +1105,17 @@ function Navbar() {
                 style={{ fontSize: "18px" }}
                 onClick={openDrawer}
               ></div>
-              <NavLink to="/" className="text-decoration-none"><div style={{color:"black", fontWeight: "500", fontSize: "18px" }}>Myntra</div></NavLink>
+              <NavLink to="/" className="text-decoration-none">
+                <div
+                  style={{
+                    color: "black",
+                    fontWeight: "500",
+                    fontSize: "18px",
+                  }}
+                >
+                  Myntra
+                </div>
+              </NavLink>
               <div className="list-unstyled ml-auto align-items-center justify-content-center d-flex">
                 <div className="px-2" style={{ width: "fit-content" }}>
                   <div className=" text-center">
@@ -1207,101 +1203,924 @@ function Navbar() {
               </div>
 
               <div className="" style={{ fontSize: "15px" }}>
-                <div
-                  className="px-3"
-                  style={{ fontWeight: "600", color: "black" }}
-                >
-                  <div
-                    className="d-flex align-items-center py-2"
-                    style={{ fontWeight: "500" }}
-                  >
-                    Men
-                    <div className="ml-auto">
-                      <span
-                        className="fa fa-angle-right"
-                        style={{ color: "grey" }}
-                      ></span>
+                <div className="px-3 navbar-nav">
+                  <div className="nav-item">
+                    <NavLink to="/" className="nav-link text-dark">
+                      <div
+                        className="d-flex align-items-center"
+                        style={{ fontWeight: "500" }}
+                      >
+                        Men
+                        <div className="ml-auto">
+                          <span
+                            id="changeArrow"
+                            className="fa fa-angle-right"
+                            style={{ color: "grey" }}
+                          ></span>
+                        </div>
+                      </div>
+                    </NavLink>
+                    <div className="dropdown-menu rounded-0 border-0 ml-2">
+                      <div className="justify-content-center d-flex">
+                        <div className="row gx-0 bg-white">
+                          <div className="col-12">
+                            <div className="text-danger">
+                              <div style={{ fontWeight: "500" }}>Topwear</div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>T-Shirts</li>
+                              <li>Casual Shirts</li>
+                              <li>Formal Shirts</li>
+                              <li>SweatShirts</li>
+                              <li>Sweaters</li>
+                              <li>Jackets</li>
+                              <li>Blazers & Coats</li>
+                              <li>Suits</li>
+                              <li>Rain Jackets</li>
+                            </ul>
+                            <div className="text-danger">
+                              <div style={{ fontWeight: "500" }}>
+                                Indian & festive Wear
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Kurtas & Kurta Sets</li>
+                              <li>Sherwanis</li>
+                              <li>Nehru Jackets</li>
+                              <li>Dhotis</li>
+                            </ul>
+                          </div>
+                          <div className="col-12">
+                            <div className="text-danger">
+                              <div style={{ fontWeight: "500" }}>
+                                Bottomwear
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Jeans</li>
+                              <li>Casual Trouser</li>
+                              <li>Formal Trouser</li>
+                              <li>Shorts</li>
+                              <li>Track Pants & Joggers</li>
+                            </ul>
+                            <div className="text-danger">
+                              <div style={{ fontWeight: "500" }}>
+                                Innerwear & Sleepwear
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Briefs & Trunks</li>
+                              <li>Boxers</li>
+                              <li>Vests</li>
+                              <li>Sleepwear & Loungewear</li>
+                              <li>Thermals</li>
+                            </ul>
+                            <div className="text-danger py-3">
+                              <div style={{ fontWeight: "500" }}>Plus Size</div>
+                            </div>
+                          </div>
+                          <div className="col-12">
+                            <div className="text-danger">
+                              <div style={{ fontWeight: "500" }}>Footwear</div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Casual Shoes</li>
+                              <li>Sports Shoes</li>
+                              <li>Formal Shoes</li>
+                              <li>Sneakers</li>
+                              <li>Sandals & Floaters</li>
+                              <li>Flip Flops</li>
+                              <li>Socks</li>
+                            </ul>
+                            <div className="text-danger">
+                              <div style={{ fontWeight: "500" }}>
+                                Personal Care & Grooming
+                              </div>
+                            </div>
+                            <div className="text-danger py-3">
+                              <div style={{ fontWeight: "500" }}>
+                                Sunglasses & Frames
+                              </div>
+                            </div>
+                            <div className="text-danger pb-3">
+                              <div style={{ fontWeight: "500" }}>Watches</div>
+                            </div>
+                          </div>
+                          <div className="col-12">
+                            <div className="text-danger">
+                              <div style={{ fontWeight: "500" }}>
+                                Fashion Accessories
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Wallets</li>
+                              <li>Belts</li>
+                              <li>Perfumes & Body Mists</li>
+                              <li>Trimmers</li>
+                              <li>Deodrants</li>
+                              <li>Ties, Cufflinks & Pocket Squares</li>
+                              <li>Accessory Gift Sets</li>
+                              <li>Caps & Hats</li>
+                              <li>Mufflers, Scarves & Gloves</li>
+                              <li>Phone Cases</li>
+                              <li>Rings & Wristwear</li>
+                              <li>Helmets</li>
+                            </ul>
+                            <div className="text-danger">
+                              <div style={{ fontWeight: "500" }}>
+                                Bags & backpacks
+                              </div>
+                            </div>
+                            <div className="text-danger py-3">
+                              <div style={{ fontWeight: "500" }}>
+                                Luggages & Trolleys
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div
-                    className="d-flex align-items-center py-2"
-                    style={{ fontWeight: "500" }}
-                  >
-                    Women
-                    <div className="ml-auto">
-                      <span
-                        className="fa fa-angle-right"
-                        style={{ color: "grey" }}
-                      ></span>
+
+                  <div className="nav-item">
+                    <NavLink to="/" className="nav-link text-dark">
+                      <div
+                        className="d-flex align-items-center"
+                        style={{ fontWeight: "500" }}
+                      >
+                        Women
+                        <div className="ml-auto">
+                          <span
+                            id="changeArrow"
+                            className="fa fa-angle-right"
+                            style={{ color: "grey" }}
+                          ></span>
+                        </div>
+                      </div>
+                    </NavLink>
+                    <div className="dropdown-menu rounded-0 border-0 ml-2">
+                      <div className="justify-content-center d-flex">
+                        <div className="row gx-0 bg-white">
+                          <div className="col-12">
+                            <div className="" style={{ color: "magenta" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Indian & Fusion Wear
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Kurtas & Suits</li>
+                              <li>Kurtis, Tunics & Tops</li>
+                              <li>Sarees</li>
+                              <li>Ethnic Wear</li>
+                              <li>Leggings, Salwars & Churidars</li>
+                              <li>Skirts & Palazzos</li>
+                              <li>Dress Materials</li>
+                              <li>Lehenga Cholis</li>
+                              <li>Dupattas & Shawls</li>
+                              <li>Jackets</li>
+                            </ul>
+                            <div className="" style={{ color: "magenta" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Belts, Scarves & More
+                              </div>
+                            </div>
+                            <div className="py-3" style={{ color: "magenta" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Watches & Wearables
+                              </div>
+                            </div>
+                          </div>
+                          <div className="col-12">
+                            <div className="" style={{ color: "magenta" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Western Wear
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Dresses</li>
+                              <li>Tops</li>
+                              <li>Tshirts</li>
+                              <li>Trousers & Capris</li>
+                              <li>Shorts & Skirts</li>
+                              <li>Co-ords</li>
+                              <li>Playsuits</li>
+                              <li>Jumpsuits</li>
+                              <li>Shrugs</li>
+                              <li>Sweaters & SweatShirts</li>
+                              <li>Jackets & Coats</li>
+                              <li>Blazers & Waistcoats</li>
+                            </ul>
+                            <div className="py-3" style={{ color: "magenta" }}>
+                              <div style={{ fontWeight: "500" }}>Plus Size</div>
+                            </div>
+                          </div>
+                          <div className="col-12">
+                            <div className="" style={{ color: "magenta" }}>
+                              <div style={{ fontWeight: "500" }}>Maternity</div>
+                            </div>
+                            <div className=" py-3" style={{ color: "magenta" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Sunglasses & Frames
+                              </div>
+                            </div>
+                            <div className="" style={{ color: "magenta" }}>
+                              <div style={{ fontWeight: "500" }}>Footwear</div>
+                            </div>
+
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Flats</li>
+                              <li>Casual Shoes</li>
+                              <li>Heels</li>
+                              <li>Boots</li>
+                              <li>Sports Shoes & Floaters</li>
+                            </ul>
+                            <div className="" style={{ color: "magenta" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Sports & Active Wear
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Clothing</li>
+                              <li>Footwear</li>
+                              <li>Sports Accessories</li>
+                              <li>Sports Equipment</li>
+                            </ul>
+                          </div>
+                          <div className="col-12">
+                            <div className="" style={{ color: "magenta" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Lingerie & Sleepwear
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Bra</li>
+                              <li>Briefs</li>
+                              <li>Shapewear</li>
+                              <li>Shapewear & Loungewear</li>
+                              <li>Swimwear</li>
+                              <li>Camisoles & Thermals</li>
+                            </ul>
+                            <div className="" style={{ color: "magenta" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Beauty & Personal Care
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Makeup</li>
+                              <li>Skincare</li>
+                              <li>Premium Beauty</li>
+                              <li>Lipsticks</li>
+                              <li>Fragrances</li>
+                            </ul>
+                          </div>
+                          <div className="col-12">
+                            <div className="" style={{ color: "magenta" }}>
+                              <div style={{ fontWeight: "500" }}>Gadgets</div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Smart Wearables</li>
+                              <li>Fitness Gadgets</li>
+                              <li>Headphones</li>
+                              <li>Speakers</li>
+                            </ul>
+                            <div className="" style={{ color: "magenta" }}>
+                              <div style={{ fontWeight: "500" }}>Jewellery</div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Fashion Jewellery</li>
+                              <li>Fine Jewellery</li>
+                              <li>Earings</li>
+                            </ul>
+                            <div className=" pt-3" style={{ color: "magenta" }}>
+                              <div style={{ fontWeight: "500" }}>Backpacks</div>
+                            </div>
+                            <div className=" py-3" style={{ color: "magenta" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Handbags, Bags & Wallets
+                              </div>
+                            </div>
+                            <div className="" style={{ color: "magenta" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Luggages & Trolleys
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div
-                    className="d-flex align-items-center py-2"
-                    style={{ fontWeight: "500" }}
-                  >
-                    kids
-                    <div className="ml-auto">
-                      <span
-                        className="fa fa-angle-right"
-                        style={{ color: "grey" }}
-                      ></span>
+
+                  <div className="nav-item">
+                    <NavLink to="/" className="nav-link text-dark">
+                      <div
+                        className="d-flex align-items-center"
+                        style={{ fontWeight: "500" }}
+                      >
+                        kids
+                        <div className="ml-auto">
+                          <span
+                            id="changeArrow"
+                            className="fa fa-angle-right"
+                            style={{ color: "grey" }}
+                          ></span>
+                        </div>
+                      </div>
+                    </NavLink>
+                    <div className="dropdown-menu rounded-0 border-0 ml-2">
+                      <div className="justify-content-center d-flex">
+                        <div className="row gx-0 bg-white">
+                          <div className="col-12">
+                            <div className="" style={{ color: "orangered" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Boys Clothing
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>T-Shirts</li>
+                              <li>Shirts</li>
+                              <li>Shorts</li>
+                              <li>Jeans</li>
+                              <li>Trousers</li>
+                              <li>Clothing Sets</li>
+                              <li>Ethnic Wear</li>
+                              <li>Track Pants & Pyjamas</li>
+                              <li>Jacket, Sweater & SweatShirts</li>
+                              <li>Party Wear</li>
+                              <li>Innerwear & Thermals</li>
+                              <li>Nightwear & Loungewear</li>
+                              <li>Value Packs</li>
+                            </ul>
+                          </div>
+                          <div className="col-12">
+                            <div className="" style={{ color: "orangered" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Girls Clothing
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Dresses</li>
+                              <li>Tops</li>
+                              <li>Tshirts</li>
+                              <li>Clothing Sets</li>
+                              <li>Lehenga Cholis</li>
+                              <li>Kurta Sets</li>
+                              <li>Party Wear</li>
+                              <li>Dungarees & Jumpsuits</li>
+                              <li>Skirts & Shorts</li>
+                              <li>Tights & Leggings</li>
+                              <li>Jeans, Trousers & Capris</li>
+                              <li>Jacket, Sweater & SweatShirts</li>
+                              <li>Innerwear & Thermals</li>
+                              <li>Nightwear & Loungewear</li>
+                              <li>Value Packs</li>
+                            </ul>
+                          </div>
+                          <div className="col-12">
+                            <div className="" style={{ color: "orangered" }}>
+                              <div style={{ fontWeight: "500" }}>Footwear</div>
+                            </div>
+
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Casual Shoes</li>
+                              <li>FlipFlops</li>
+                              <li>Sports Shoes</li>
+                              <li>Flats</li>
+                              <li>Sandals</li>
+                              <li>Heels</li>
+                              <li>School Shoes</li>
+                              <li>Socks</li>
+                            </ul>
+                            <div className="" style={{ color: "orangered" }}>
+                              <div style={{ fontWeight: "500" }}>Toys</div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Learning & Development</li>
+                              <li>Activity Toys</li>
+                              <li>Soft Toys</li>
+                              <li>Action Figure / Play set</li>
+                            </ul>
+                          </div>
+                          <div className="col-12">
+                            <div className="" style={{ color: "orangered" }}>
+                              <div style={{ fontWeight: "500" }}>Infants</div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Bodysuits</li>
+                              <li>Rompers & Sleepsuits</li>
+                              <li>Clothing Sets</li>
+                              <li>Tshirts & Tops</li>
+                              <li>Dresses</li>
+                              <li>Bottom wear</li>
+                              <li>Winter wear</li>
+                              <li>Innerwear & Sleepwear</li>
+                              <li>Infant Care</li>
+                            </ul>
+                            <div
+                              className="py-3"
+                              style={{ color: "orangered" }}
+                            >
+                              <div style={{ fontWeight: "500" }}>
+                                Home & Bath
+                              </div>
+                            </div>
+                            <div className="" style={{ color: "orangered" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Personal care
+                              </div>
+                            </div>
+                          </div>
+                          <div className="col-12">
+                            <div className="" style={{ color: "orangered" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Kids Accessories
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Bags & Backpacks</li>
+                              <li>Watches</li>
+                              <li>Jewellery & Hair Accessory</li>
+                              <li>Sunglasses</li>
+                              <li>Masks & Protective Gears</li>
+                              <li>Caps & Hats</li>
+                            </ul>
+                            <div className="" style={{ color: "orangered" }}>
+                              <div style={{ fontWeight: "500" }}>Brands</div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>H&M</li>
+                              <li>Max Kids</li>
+                              <li>Pantaloons</li>
+                              <li>United Colors Of Benetton Kids</li>
+                              <li>YK</li>
+                              <li>U.S Polo Assn. Kids</li>
+                              <li>Mothercare</li>
+                              <li>HRX</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div
-                    className="d-flex align-items-center py-2"
-                    style={{ fontWeight: "500" }}
-                  >
-                    Home & Living
-                    <div className="ml-auto">
-                      <span
-                        className="fa fa-angle-right"
-                        style={{ color: "grey" }}
-                      ></span>
+
+                  <div className="nav-item">
+                    <NavLink to="/" className="nav-link text-dark">
+                      <div
+                        className="d-flex align-items-center"
+                        style={{ fontWeight: "500" }}
+                      >
+                        Home & Living
+                        <div className="ml-auto">
+                          <span
+                            id="changeArrow"
+                            className="fa fa-angle-right"
+                            style={{ color: "grey" }}
+                          ></span>
+                        </div>
+                      </div>
+                    </NavLink>
+                    <div className="dropdown-menu rounded-0 border-0 ml-2">
+                      <div className="justify-content-center d-flex">
+                        <div className="row gx-0 bg-white">
+                          <div className="col-12">
+                            <div className="" style={{ color: "#e7bc00" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Bed Linen & Furnishing
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Bed Runners</li>
+                              <li>Mattress Protectors</li>
+                              <li>Bedsheets</li>
+                              <li>Bedding Sets</li>
+                              <li>Blankets, Quilts & Dohars</li>
+                              <li>Pillows & Pillow Covers</li>
+                              <li>Bed Covers</li>
+                              <li>Diwan Sets</li>
+                              <li>Chair Pads & Covers</li>
+                              <li>Sofa Covers</li>
+                            </ul>
+                            <div className="" style={{ color: "#e7bc00" }}>
+                              <div style={{ fontWeight: "500" }}>Flooring</div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Floor Runner</li>
+                              <li>Carpets</li>
+                              <li>Floor Mats & Dhurries</li>
+                              <li>Door Maths</li>
+                            </ul>
+                          </div>
+                          <div className="col-12">
+                            <div className="" style={{ color: "#e7bc00" }}>
+                              <div style={{ fontWeight: "500" }}>Bath</div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Bath Towels</li>
+                              <li>Hand & Face Towels</li>
+                              <li>Beach Towels</li>
+                              <li>Towels Set</li>
+                              <li>Bath Rugs</li>
+                              <li>Bath Robes</li>
+                              <li>Bathroom Accessories</li>
+                              <li>Shower Curtains</li>
+                            </ul>
+                            <div className="" style={{ color: "#e7bc00" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Lamps & Lighting
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Floor Lamps</li>
+                              <li>Ceiling Lamps</li>
+                              <li>Table Lamps</li>
+                              <li>Wall Lamps</li>
+                              <li>Outdoor Lamps</li>
+                              <li>String Lights</li>
+                            </ul>
+                          </div>
+                          <div className="col-12">
+                            <div className="" style={{ color: "#e7bc00" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Home Decor
+                              </div>
+                            </div>
+
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Plants & Planters</li>
+                              <li>Aromas & Candles</li>
+                              <li>Clocks</li>
+                              <li>Mirrors</li>
+                              <li>Wall Decor</li>
+                              <li>Festive Decor</li>
+                              <li>Pooja Essentials</li>
+                              <li>Wall Shelves</li>
+                              <li>Fountains</li>
+                              <li>Showpieces & Vases</li>
+                              <li>Ottoman</li>
+                            </ul>
+                            <div className="" style={{ color: "#e7bc00" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Cushions & Cushion Covers
+                              </div>
+                            </div>
+                            <div className="py-3" style={{ color: "#e7bc00" }}>
+                              <div style={{ fontWeight: "500" }}>Curtains</div>
+                            </div>
+                          </div>
+                          <div className="col-12">
+                            <div className="" style={{ color: "#e7bc00" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Home Gift Sets
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Kitchen & Table</li>
+                              <li>Dinnerware & Serveware</li>
+                              <li>Cups and Mugs</li>
+                              <li>Bakeware & Cookware</li>
+                              <li>Kitchen Storage & Tools</li>
+                              <li>Bar & Drinkware</li>
+                              <li>Table Covers & Furnishings</li>
+                            </ul>
+                            <div className="py-3" style={{ color: "#e7bc00" }}>
+                              <div style={{ fontWeight: "500" }}>Storage</div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Bins</li>
+                              <li>Hangers</li>
+                              <li>Organisers</li>
+                              <li>Hooks & Holders</li>
+                              <li>Laundry Bags</li>
+                            </ul>
+                          </div>
+                          <div className="col-12">
+                            <div className="" style={{ color: "#e7bc00" }}>
+                              <div style={{ fontWeight: "500" }}>Brands</div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>H&M</li>
+                              <li>Marks & Spencer</li>
+                              <li>Home Center</li>
+                              <li>Spaces</li>
+                              <li>D' Decor</li>
+                              <li>Story@Home</li>
+                              <li>Pure Home & Living</li>
+                              <li>Raymond Home</li>
+                              <li>Maspar</li>
+                              <li>Trident</li>
+                              <li>Cortina</li>
+                              <li>Random</li>
+                              <li>Ellementry</li>
+                              <li>ROMEE</li>
+                              <li>SEJ by Nisha Gupta</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div
-                    className="d-flex align-items-center py-2"
-                    style={{ fontWeight: "500" }}
-                  >
-                    Beauty
-                    <div className="ml-auto">
-                      <span
-                        className="fa fa-angle-right"
-                        style={{ color: "grey" }}
-                      ></span>
+
+                  <div className="nav-item">
+                    <NavLink to="/" className="nav-link text-dark">
+                      <div
+                        className="d-flex align-items-center"
+                        style={{ fontWeight: "500" }}
+                      >
+                        Beauty
+                        <div className="ml-auto">
+                          <span
+                            id="changeArrow"
+                            className="fa fa-angle-right"
+                            style={{ color: "grey" }}
+                          ></span>
+                        </div>
+                      </div>
+                    </NavLink>
+                    <div className="dropdown-menu rounded-0 border-0 ml-2">
+                      <div className="justify-content-center d-flex">
+                        <div className="row gx-0 bg-white">
+                          <div className="col-12">
+                            <div className="" style={{ color: "#069ebf" }}>
+                              <div style={{ fontWeight: "500" }}>Makeup</div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Lipstick</li>
+                              <li>Lip Gloss</li>
+                              <li>Lip Liner</li>
+                              <li>Mascara</li>
+                              <li>Eyeliner</li>
+                              <li>Kajal</li>
+                              <li>Eyeshadow</li>
+                              <li>Foundation</li>
+                              <li>Primer</li>
+                              <li>Concealer</li>
+                              <li>Compact</li>
+                              <li>Nail Polish</li>
+                            </ul>
+                          </div>
+                          <div className="col-12">
+                            <div className="" style={{ color: "#069ebf" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Skincare, Bath & Body
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Face Moisturiser</li>
+                              <li>Cleanser</li>
+                              <li>Masks & Peel</li>
+                              <li>Sunscreen</li>
+                              <li>Serum</li>
+                              <li>Face Wash</li>
+                              <li>Eye Cream</li>
+                              <li>Lip Balm</li>
+                              <li>Body Lotion</li>
+                              <li>Body Wash</li>
+                              <li>Body Scrub</li>
+                              <li>Hand Cream</li>
+                            </ul>
+                            <div className="py-3" style={{ color: "#069ebf" }}>
+                              <div style={{ fontWeight: "500" }}>Baby Care</div>
+                            </div>
+                            <div className="" style={{ color: "#069ebf" }}>
+                              <div style={{ fontWeight: "500" }}>Masks</div>
+                            </div>
+                          </div>
+                          <div className="col-12">
+                            <div className="" style={{ color: "#069ebf" }}>
+                              <div style={{ fontWeight: "500" }}>Haircare</div>
+                            </div>
+
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Shampoo</li>
+                              <li>Conditioner</li>
+                              <li>Hair Cream</li>
+                              <li>Hair Oil</li>
+                              <li>Hair Gel</li>
+                              <li>Hair Color</li>
+                              <li>Hair Serum</li>
+                              <li>Hair Accessory</li>
+                            </ul>
+                            <div className="" style={{ color: "#069ebf" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Fragrances
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Perfume</li>
+                              <li>Deodrants</li>
+                              <li>Body Mist</li>
+                            </ul>
+                          </div>
+                          <div className="col-12">
+                            <div className="" style={{ color: "#069ebf" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Appliances
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Hair Straightener</li>
+                              <li>Hair Dryer</li>
+                              <li>Epilator</li>
+                            </ul>
+                            <div className="py-3" style={{ color: "#069ebf" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Men's Grooming
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Trimmers</li>
+                              <li>Beard Oil</li>
+                              <li>Hair Wax</li>
+                            </ul>
+                            <div className="" style={{ color: "#069ebf" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Beauty Gift & Makeup Set
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Beauty Gift</li>
+                              <li>Makeup Kit</li>
+                            </ul>
+                            <div className="py-3" style={{ color: "#069ebf" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Premium Beauty
+                              </div>
+                            </div>
+                            <div className="" style={{ color: "#069ebf" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Wellness & Hygiene
+                              </div>
+                            </div>
+                          </div>
+                          <div className="col-12">
+                            <div className="" style={{ color: "#069ebf" }}>
+                              <div style={{ fontWeight: "500" }}>
+                                Top Brands
+                              </div>
+                            </div>
+                            <ul
+                              className="list-unstyled"
+                              style={{ color: "black" }}
+                            >
+                              <li>Lakme</li>
+                              <li>Maybeline</li>
+                              <li>LOreal</li>
+                              <li>Philips</li>
+                              <li>Bath & Body Works</li>
+                              <li>THE BODY SHOP</li>
+                              <li>Biotique</li>
+                              <li>Mamaearth</li>
+                              <li>MCaffeine</li>
+                              <li>Nivea</li>
+                              <li>Lotus Herbals</li>
+                              <li>LOreal Professionnel</li>
+                              <li>KAMA AYURVEDA</li>
+                              <li>M.A.C</li>
+                              <li>Forest Essentials</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <hr className="m-0 my-2"></hr>
-                <div className="px-3" style={{ color: "black" }}>
-                  <div className="py-2">Account</div>
-                  <div className="py-2">Orders</div>
-                  <div className="py-2">
-                    Myntra Studio{" "}
-                    <span
-                      className="rounded-pill bg-transparent btn btn-danger text-danger px-2 p-0"
-                      style={{ fontSize: "8px" }}
-                    >
-                      <div style={{ fontWeight: "500" }}>NEW</div>
-                    </span>
-                  </div>
-                  <div className="py-2">
-                    Myntra Mall{" "}
-                    <span
-                      className="rounded-pill bg-transparent btn btn-danger text-danger px-2 p-0"
-                      style={{ fontSize: "8px" }}
-                    >
-                      <div style={{ fontWeight: "500" }}>NEW</div>
-                    </span>
-                  </div>
-                  <div className="py-2">Myntra Insider</div>
-                  <div className="py-2">Gift Cards</div>
-                  <div className="py-2">Contact Us</div>
-                  <div className="py-2">FAQs</div>
-                  <div className="pt-2 pb-3">Legal</div>
-                </div>
-                <img src={app} className="img-fluid w-100" />
               </div>
+              <hr className="m-0 my-2"></hr>
+              <div className="px-3" style={{ color: "black" }}>
+                <div className="py-2">Account</div>
+                <div className="py-2">Orders</div>
+                <div className="py-2">
+                  Myntra Studio{" "}
+                  <span
+                    className="rounded-pill bg-transparent btn btn-danger text-danger px-2 p-0"
+                    style={{ fontSize: "8px" }}
+                  >
+                    <div style={{ fontWeight: "500" }}>NEW</div>
+                  </span>
+                </div>
+                <div className="py-2">
+                  Myntra Mall{" "}
+                  <span
+                    className="rounded-pill bg-transparent btn btn-danger text-danger px-2 p-0"
+                    style={{ fontSize: "8px" }}
+                  >
+                    <div style={{ fontWeight: "500" }}>NEW</div>
+                  </span>
+                </div>
+                <div className="py-2">Myntra Insider</div>
+                <div className="py-2">Gift Cards</div>
+                <div className="py-2">Contact Us</div>
+                <div className="py-2">FAQs</div>
+                <div className="pt-2 pb-3">Legal</div>
+              </div>
+              <img src={app} className="img-fluid w-100" />
             </div>
           </div>
         ) : (
