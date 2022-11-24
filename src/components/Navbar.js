@@ -23,6 +23,7 @@ function Navbar() {
   }, []);
 
   const openDrawer = () => {
+    window.scroll(0, 0);
     document.getElementById("backdrop").style.display = "block";
     document.getElementById("backdrop").style.zIndex = "7";
     document.body.style.overflowY = "hidden";
@@ -1118,7 +1119,7 @@ function Navbar() {
                 style={{ fontSize: "18px" }}
                 onClick={openDrawer}
               ></div>
-              <div style={{ fontWeight: "500", fontSize: "18px" }}>Myntra</div>
+              <NavLink to="/" className="text-decoration-none"><div style={{color:"black", fontWeight: "500", fontSize: "18px" }}>Myntra</div></NavLink>
               <div className="list-unstyled ml-auto align-items-center justify-content-center d-flex">
                 <div className="px-2" style={{ width: "fit-content" }}>
                   <div className=" text-center">

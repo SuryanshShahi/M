@@ -4,6 +4,7 @@ import StarsRating from "stars-rating";
 import ImageSkeleton from "./ImageSkeleton";
 import { ProgressBar } from "react-bootstrap";
 function Products() {
+  window.scroll(0, 0);
   const { id } = useParams();
 
   const [items, setItems] = useState([]);
@@ -21,17 +22,6 @@ function Products() {
 
     setLoading(false);
   };
-//   const getData = () => {
-//     axios
-//       .get(`https://fakestoreapi.com/products/${id}`)
-//       .then((res) => {
-//         setItems(res.data);
-//         setLoading(false);
-//       })
-//       .catch((err) => {
-//         console.log(err);
-//       });
-//   };
 
   useEffect(() => {
     getData();

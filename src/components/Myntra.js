@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import CardSkeleton from "./CardSkeleton";
 
-function Home() {
+function Myntra() {
+  window.scroll(0, 0);
+
   const params = useParams();
   const [isActive, setActive] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -30,12 +32,11 @@ function Home() {
     setData(updatedItems);
   };
 
-  const Loading = () => {
-    return <div>Loading...</div>;
-  };
   return (
     <section id="products" style={{ marginTop: "100px" }}>
-    <div className="backdrop" id="backdrop">.</div>
+      <div className="backdrop" id="backdrop">
+        .
+      </div>
       <div className="pl-3 pb-lg-0 pb-3 pt-2">
         <div>
           Home {params.pa}
@@ -921,4 +922,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Myntra;
