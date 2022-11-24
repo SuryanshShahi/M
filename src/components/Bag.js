@@ -33,6 +33,7 @@ function Bag() {
   }, []);
   return (
     <section id="bag">
+    <div className="backdrop" id="backdrop">.</div>
       <nav
         className="navbar navbar-expand-lg bg-white p-0 m-0 px-lg-5 px-md-5"
         style={{ borderBottom: "1px solid #d4d5d9" }}

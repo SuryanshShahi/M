@@ -35,6 +35,7 @@ function Home() {
   };
   return (
     <section id="products" style={{ marginTop: "100px" }}>
+    <div className="backdrop" id="backdrop">.</div>
       <div className="pl-3 pb-lg-0 pb-3 pt-2">
         <div>
           Home {params.pa}

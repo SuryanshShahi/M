@@ -37,7 +37,7 @@ function Navbar() {
     <section id="navbar">
       {!isactive ? (
         <nav
-          className="navbar navbar-expand-lg fixed-top bg-white p-0 m-0 px-lg-5 px-md-5"
+          className="navbar navbar-expand-lg fixed-top bg-white p-0 m-0 px-lg-5 px-md-4"
           style={{ boxShadow: "0 4px 12px 0 rgb(0 0 0 / 5%)", zIndex: "6" }}
         >
           <div className="navbar-nav w-100 py-lg-3 py-2 px-3">
@@ -63,7 +63,7 @@ function Navbar() {
             </div>
 
             <div
-              className="collapse navbar-collapse pl-lg-5"
+              className="collapse navbar-collapse pl-lg-3"
               id="navbarSupportedContent"
             >
               <ul
@@ -71,7 +71,7 @@ function Navbar() {
                 style={{ width: "100%" }}
               >
                 <li
-                  style={{ width: "fit-content", fontSize: "16px" }}
+                  style={{ width: "fit-content", fontSize: "15px" }}
                   className="nav-item px-2 py-2"
                   onMouseOver={() =>
                     (document.getElementById("backdrop").style.display =
@@ -241,7 +241,7 @@ function Navbar() {
                 </li>
 
                 <li
-                  style={{ width: "fit-content", fontSize: "16px" }}
+                  style={{ width: "fit-content", fontSize: "15px" }}
                   className="nav-item px-2 py-2"
                   onMouseOver={() =>
                     (document.getElementById("backdrop").style.display =
@@ -252,7 +252,7 @@ function Navbar() {
                   }
                 >
                   <NavLink
-                    to="/"
+                    to="/myntra"
                     className="nav-link text-dark"
                     style={{ fontWeight: "600" }}
                   >
@@ -448,7 +448,7 @@ function Navbar() {
                 </li>
 
                 <li
-                  style={{ width: "fit-content", fontSize: "16px" }}
+                  style={{ width: "fit-content", fontSize: "15px" }}
                   className="nav-item px-2 py-2"
                   onMouseOver={() =>
                     (document.getElementById("backdrop").style.display =
@@ -629,7 +629,7 @@ function Navbar() {
                 </li>
 
                 <li
-                  style={{ width: "fit-content", fontSize: "16px" }}
+                  style={{ width: "fit-content", fontSize: "15px" }}
                   className="nav-item px-2 py-2"
                   onMouseOver={() =>
                     (document.getElementById("backdrop").style.display =
@@ -821,7 +821,7 @@ function Navbar() {
                 </li>
 
                 <li
-                  style={{ width: "fit-content", fontSize: "16px" }}
+                  style={{ width: "fit-content", fontSize: "15px" }}
                   className="nav-item px-2 py-2"
                   onMouseOver={() =>
                     (document.getElementById("backdrop").style.display =
@@ -1015,7 +1015,7 @@ function Navbar() {
                 </li>
 
                 <li
-                  style={{ width: "fit-content", fontSize: "16px" }}
+                  style={{ width: "fit-content", fontSize: "15px" }}
                   className="nav-item px-2 py-2"
                 >
                   <NavLink

@@ -7,6 +7,7 @@ function LoginSignup() {
   }, []);
   return (
     <div>
+    <div className="backdrop" id="backdrop">.</div>
       <div
         className="justify-content-center align-items-center d-flex"
         style={{ height: "100vh", background: "#ffc0cb8c" }}
