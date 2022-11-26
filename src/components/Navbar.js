@@ -642,8 +642,8 @@ function Navbar() {
                 >
                   <NavLink
                     to="/"
-                    className="nav-link text-dark"
-                    style={{ fontWeight: "600" }}
+                    className="nav-link text-dark homeLiving"
+                    style={{ fontWeight: "600", width:"127px" }}
                   >
                     HOME & LIVING
                   </NavLink>
@@ -1027,7 +1027,7 @@ function Navbar() {
 
                 <li className="nav-item searchbar w-50 pl-lg-5 pt-lg-0 pt-3">
                   {" "}
-                  <form className="d-flex align-items-center position-relative">
+                  <form className="d-flex align-items-center pr-3 position-relative">
                     <div
                       className="fa fa-search pl-3"
                       style={{
@@ -1400,12 +1400,12 @@ function Navbar() {
                 <div className="px-3 pt-2 pb-1">
                   {sidebar.map((e) => {
                     return (
-                      <div key={e.id}>
+                      <div key={e.id} style={{paddingBottom:"5px"}}>
                         <Accordion flush>
                           <Accordion.Item eventKey={e.id}>
                             <Accordion.Header>
                               <div
-                                className="d-flex align-items-center"
+                                className="d-flex text-dark align-items-center"
                                 style={{ fontWeight: "500", fontSize: "1rem" }}
                               >
                                 {e.name}
@@ -1421,7 +1421,7 @@ function Navbar() {
                             <Accordion.Body>
                               {e.subField.map((e1) => {
                                 return (
-                                  <Accordion flush id="alignInnerMenu">
+                                  <Accordion flush key={e1.id} id="alignInnerMenu" style={{paddingBottom:"5px"}}>
                                     <Accordion.Item eventKey="0">
                                       <Accordion.Header>
                                         <div className="d-flex align-items-center">

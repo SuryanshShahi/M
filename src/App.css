@@ -43,6 +43,7 @@ button:focus {
 #drawer li {
   padding-left: 16px;
   padding-top: 8px;
+  padding-bottom: 8px;
 }
 #alignInnerMenu {
   padding-left: 12px;
@@ -83,11 +84,11 @@ button:focus {
     overflow-y: scroll;
     height: 80vh;
   }
+  .homeLiving{
+    width: fit-content !important;
+  }
 }
 @media (max-width: 575px) {
-  /* .backdrop{
-    display: none !important;
-  } */
   .navbar-nav {
     padding: 15px 0px;
   }
