@@ -13,6 +13,7 @@ function Navbar() {
   const [searchBar, setSearchBar] = useState(false);
 
   useEffect(() => {
+    // document.getElementById("loginProfileIcon").style.display = "block";
     const changeNav = () => {
       if (window.innerWidth >= 575) {
         setActive(false);
@@ -1085,10 +1086,10 @@ function Navbar() {
 
               <div className="list-unstyled align-items-center justify-content-center py-lg-0 py-4 d-flex ml-lg-auto mb-2 mb-lg-0 d-flex">
                 <div
-                  className="px-2 navbar-nav"
+                  className="px-2 navbar-nav" id="loginProfileIcon"
                   style={{ width: "fit-content" }}
                 >
-                  <div className=" text-center nav-item">
+                  <div className="text-center nav-item">
                     <NavLink
                       to="/"
                       className="nav-link text-dark"
@@ -1109,8 +1110,11 @@ function Navbar() {
                       style={{ left: "76%" }}
                     >
                       <div
-                        className="p-3 bg-white mt-4 shadow-lg"
-                        style={{ width: "20vw" }}
+                        className="p-3 bg-white mt-4"
+                        style={{
+                          width: "20vw",
+                          boxShadow: "0 1px 10px rgb(0 0 0 / 8%)",
+                        }}
                       >
                         <ul
                           className="list-unstyled m-0"
@@ -1118,11 +1122,10 @@ function Navbar() {
                         >
                           <NavLink
                             to="/profile"
+                            style={{ display: "none" }}
                             className="text-decoration-none"
                           >
-                            <div
-                              style={{ ottom: "1px solid #8080804d" }}
-                            >
+                            <div style={{ ottom: "1px solid #8080804d" }}>
                               <div
                                 className="text-dark"
                                 style={{ fontWeight: "600" }}
@@ -1137,6 +1140,24 @@ function Navbar() {
                               </div>
                             </div>
                           </NavLink>
+                          <div style={{ color: "black" }}>
+                            <div style={{ fontWeight: "600" }}>Welcome</div>
+                            <div>to access account & manage orders</div>
+                            <NavLink to="/login">
+                              <div
+                                className="btn btn-danger mt-3 mb-2 bg-transparent loginBtn"
+                                style={{
+                                  color: "#ff3f6c",
+                                  transition: "0.5s",
+                                  fontWeight: "600",
+                                  border: "1px solid #eaeaec",
+                                }}
+                              >
+                                LOGIN / SIGNUP
+                              </div>
+                            </NavLink>
+                          </div>
+                          <hr style={{ color: "#A9ABB3" }}></hr>
                           <li style={{ marginTop: "12px" }}>Orders</li>
                           <li>Whishlist</li>
                           <li>Gift Cards</li>
@@ -1150,13 +1171,13 @@ function Navbar() {
                               New
                             </span>
                           </li>
-                          <hr></hr>
+                          <hr style={{ color: "#A9ABB3" }}></hr>
                           <li>Myntra Credit</li>
                           <li>Coupons</li>
                           <li>Saved Cards</li>
                           <li>Saved VPA</li>
                           <li>Saved Addresses</li>
-                          <hr></hr>
+                          <hr style={{ color: "#A9ABB3" }}></hr>
                           <li>Edit Profile</li>
                           <li>Logout</li>
                         </ul>
@@ -1164,44 +1185,45 @@ function Navbar() {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="px-3" style={{ width: "fit-content" }}>
-                <div className=" text-center">
-                  <div
-                    className="fa fa-heart-o"
-                    style={{ fontSize: "17px" }}
-                  ></div>
-                  <div style={{ fontSize: "12px" }}>
-                    <div style={{ fontWeight: "500" }}>WhishList</div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="px-3 d-flex position-relative"
-                style={{ width: "fit-content" }}
-              >
-                <NavLink
-                  to={`/myntra/${1}/bag`}
-                  className="fa fa-shopping-bag text-decoration-none text-dark"
-                >
-                  <div className="text-center font-weight-bold pt-2">
+
+                <div className="px-3" style={{ width: "fit-content" }}>
+                  <div className=" text-center">
+                    <div
+                      className="fa fa-heart-o"
+                      style={{ fontSize: "17px" }}
+                    ></div>
                     <div style={{ fontSize: "12px" }}>
-                      <div style={{ fontWeight: "500" }}>Bag</div>
+                      <div style={{ fontWeight: "500" }}>WhishList</div>
                     </div>
                   </div>
-                </NavLink>
-                <span
-                  className="badge bg-danger position-absolute ml-3 mb-2"
-                  style={{
-                    fontSize: "10px",
-                    height: "fit-content",
-                    borderRadius: "50px",
-                    top: "-5px",
-                    left: "11px",
-                  }}
+                </div>
+                <div
+                  className="px-3 d-flex position-relative"
+                  style={{ width: "fit-content" }}
                 >
-                  1
-                </span>
+                  <NavLink
+                    to={`/myntra/${1}/bag`}
+                    className="fa fa-shopping-bag text-decoration-none text-dark"
+                  >
+                    <div className="text-center font-weight-bold pt-2">
+                      <div style={{ fontSize: "12px" }}>
+                        <div style={{ fontWeight: "500" }}>Bag</div>
+                      </div>
+                    </div>
+                  </NavLink>
+                  <span
+                    className="badge bg-danger position-absolute ml-3 mb-2"
+                    style={{
+                      fontSize: "10px",
+                      height: "fit-content",
+                      borderRadius: "50px",
+                      top: "-5px",
+                      left: "11px",
+                    }}
+                  >
+                    1
+                  </span>
+                </div>
               </div>
             </div>
           </div>

@@ -28,7 +28,7 @@ function Profile() {
     }
   };
   return (
-    <section>
+    <section id="userProfile">
       <div className="backdrop" id="backdrop">
         .
       </div>
@@ -698,7 +698,7 @@ function Profile() {
                   </div>
                 </div>
                 <div
-                  className="justify-content-center d-flex mt-4"
+                  className="justify-content-center d-flex mt-3"
                   style={{ boxShadow: "0 1px 2px 0 rgb(0 0 0 / 25%)" }}
                 >
                   <div className="w-100">
@@ -724,7 +724,7 @@ function Profile() {
                       </tr>
                       <tr>
                         <td className="tt">
-                          Expiry: 14 Jun 2022 | 12:00:00 A.M
+                          Expiry: 15 Jun 2022 | 12:00:00 A.M
                         </td>
                       </tr>
                       <tr>
@@ -735,7 +735,7 @@ function Profile() {
                       </tr>
                       <tr>
                         <td className="tt">
-                          Expiry: 17 Jun 2022 | 11:59:59 P.M
+                          Expiry: 14 Jun 2022 | 12:00:00 A.M
                         </td>
                       </tr>
                       <tr>
@@ -746,7 +746,7 @@ function Profile() {
                       </tr>
                       <tr>
                         <td className="tt">
-                          Expiry: 23 Dec 2021 | 11:59:59 P.M
+                          Expiry: 17 Jun 2022 | 11:59:59 P.M
                         </td>
                       </tr>
                       <tr>
@@ -755,9 +755,9 @@ function Profile() {
                         <td>0</td>
                         <td style={{ fontWeight: "600" }}>+ 70</td>
                       </tr>
-                      <tr>
+                      <tr >
                         <td className="tt">
-                          Expiry: 27 Nov 2021 | 11:59:00 P.M
+                          Expiry: 23 Dec 2021 | 11:59:59 P.M
                         </td>
                       </tr>
                       <tr>
@@ -765,6 +765,11 @@ function Profile() {
                         <td>+ 200</td>
                         <td>0</td>
                         <td style={{ fontWeight: "600" }}>+ 200</td>
+                      </tr>
+                      <tr>
+                        <td className="tt">
+                          Expiry: 27 Nov 2021 | 11:59:00 P.M
+                        </td>
                       </tr>
                     </table>
                   </div>

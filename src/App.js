@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Products from "./components/Products";
 import Bag from "./components/Bag";
 import Login from "./components/LoginSignup";
+import CreateAccount from "./components/CreateAcc";
 import Profile from "./components/Profile";
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
             <Route exact path="/myntra/:id" component={Products} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/profile" component={Profile} />
+            <Route exact path="/createAccount" component={CreateAccount} />
           </div>
         </Switch>
         <Footer />
