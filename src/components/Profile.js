@@ -704,7 +704,7 @@ function Profile() {
                   <div className="w-100">
                     <div
                       className="p-3"
-                      style={{ fontWeight: "600", fontSize: "13px" }}
+                      style={{ fontWeight: "700", fontSize: "13px" }}
                     >
                       ACTIVE MYNCASH
                     </div>
@@ -720,7 +720,7 @@ function Profile() {
                         <td>Promotion</td>
                         <td>+ 200</td>
                         <td>0</td>
-                        <td>+ 200</td>
+                        <td style={{ fontWeight: "600" }}>+ 200</td>
                       </tr>
                       <tr>
                         <td className="tt">
@@ -731,7 +731,7 @@ function Profile() {
                         <td>Promotion</td>
                         <td>+ 200</td>
                         <td>0</td>
-                        <td>+ 200</td>
+                        <td style={{ fontWeight: "600" }}>+ 200</td>
                       </tr>
                       <tr>
                         <td className="tt">
@@ -742,7 +742,7 @@ function Profile() {
                         <td>Promotion</td>
                         <td>+ 130</td>
                         <td>0</td>
-                        <td>+ 130</td>
+                        <td style={{ fontWeight: "600" }}>+ 130</td>
                       </tr>
                       <tr>
                         <td className="tt">
@@ -753,7 +753,7 @@ function Profile() {
                         <td>Promotion</td>
                         <td>+ 70</td>
                         <td>0</td>
-                        <td>+ 70</td>
+                        <td style={{ fontWeight: "600" }}>+ 70</td>
                       </tr>
                       <tr>
                         <td className="tt">
@@ -764,7 +764,7 @@ function Profile() {
                         <td>Promotion</td>
                         <td>+ 200</td>
                         <td>0</td>
-                        <td>+ 200</td>
+                        <td style={{ fontWeight: "600" }}>+ 200</td>
                       </tr>
                     </table>
                   </div>
@@ -779,7 +779,7 @@ function Profile() {
                       <Accordion.Header>
                         <div
                           className="d-flex px-2 text-dark align-items-center"
-                          style={{ fontWeight: "600", fontSize: "13px" }}
+                          style={{ fontWeight: "700", fontSize: "13px" }}
                         >
                           TRANSACTION LOGS
                           <div className="ml-auto">
@@ -791,8 +791,8 @@ function Profile() {
                           </div>
                         </div>
                       </Accordion.Header>
-                      <Accordion.Body>
-                        <hr></hr>
+                      <Accordion.Body className="pt-1">
+                        <hr className="mt-0"></hr>
                         <div
                           className="d-flex px-3"
                           style={{ fontSize: "13px" }}
@@ -882,7 +882,7 @@ function Profile() {
                       <Accordion.Header>
                         <div
                           className="d-flex px-2 text-dark align-items-center"
-                          style={{ fontWeight: "600", fontSize: "13px" }}
+                          style={{ fontWeight: "700", fontSize: "13px" }}
                         >
                           ELIGIBILITY, MEMBERSHIP, ACCRUAL
                           <div className="ml-auto">
@@ -895,7 +895,10 @@ function Profile() {
                         </div>
                       </Accordion.Header>
                       <Accordion.Body>
-                        <ul className="mx-4" style={{ color: "#7e818c", fontSize: "13px", textAlign:"justify" }}>
+                        <ul
+                          className="mx-4 pt-1"
+                          style={{ color: "#7e818c", fontSize: "13px" }}
+                        >
                           <li className="mt-2">
                             These terms and conditions are operational only in
                             India and open to participation of all the
@@ -918,9 +921,9 @@ function Profile() {
                       <Accordion.Header>
                         <div
                           className="d-flex px-2 text-dark align-items-center"
-                          style={{ fontWeight: "600", fontSize: "13px" }}
+                          style={{ fontWeight: "700", fontSize: "13px" }}
                         >
-                        GENERAL TERMS AND CONDITIONS
+                          GENERAL TERMS AND CONDITIONS
                           <div className="ml-auto">
                             <span
                               id="changeArrow"
@@ -931,7 +934,10 @@ function Profile() {
                         </div>
                       </Accordion.Header>
                       <Accordion.Body>
-                        <ul className="mx-4" style={{ color: "#7e818c", fontSize: "14px", textAlign:"justify" }}>
+                        <ul
+                          className="mx-4 pt-1"
+                          style={{ color: "#7e818c", fontSize: "14px" }}
+                        >
                           <li className="mt-2">
                             Each member is responsible for remaining
                             knowledgeable about the Myntra Program Terms and
