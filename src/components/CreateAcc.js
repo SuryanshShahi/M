@@ -2,15 +2,14 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import create from "./images/createAcc.png";
 
-function LoginSignup() {
+function CreateAcc() {
   window.scroll(0, 0);
   useEffect(() => {
     document.getElementById("footer").style.display = "none";
     document.getElementById("loginProfileIcon").style.display = "none";
-    document.body.style.overflow = "hidden";
   }, []);
   return (
-    <div>
+    <section id="createA">
       <div className="backdrop" id="backdrop">
         .
       </div>
@@ -24,7 +23,7 @@ function LoginSignup() {
         >
           <img src={create} className="img-fluid w-100" />
           <div
-            className="text-center my-3 mt-4"
+            className="my-3 mt-4"
             style={{ fontWeight: "600", fontSize: "18px" }}
           >
             Already have an account?
@@ -69,12 +68,12 @@ function LoginSignup() {
             <hr style={{ color: "#A9ABB3", width: "48%" }}></hr>
           </div>
           <div
-            className="text-center"
+            className=""
             style={{ fontWeight: "600", fontSize: "18px" }}
           >
             New to Myntra?
           </div>
-          <NavLink to="/login" className="text-decoration-none">
+          <NavLink to="/signup" className="text-decoration-none">
             <div
               className="btn btn-danger rounded-0 my-3 text-dark align-items-center d-flex justify-content-center w-100 fa fa-user-o bg-transparent"
               style={{
@@ -90,8 +89,8 @@ function LoginSignup() {
           </NavLink>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
-export default LoginSignup;
+export default CreateAcc;

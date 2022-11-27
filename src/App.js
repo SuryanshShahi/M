@@ -13,6 +13,7 @@ import Bag from "./components/Bag";
 import Login from "./components/LoginSignup";
 import CreateAccount from "./components/CreateAcc";
 import Profile from "./components/Profile";
+import SignUp from "./components/SignUp";
 
 const App = () => {
   useEffect(() => {
@@ -31,6 +32,7 @@ const App = () => {
             <Route exact path="/login" component={Login} />
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/createAccount" component={CreateAccount} />
+            <Route exact path="/signup" component={SignUp} />
           </div>
         </Switch>
         <Footer />

@@ -5,10 +5,9 @@ function LoginSignup() {
   useEffect(() => {
     document.getElementById("footer").style.display = "none";
     document.getElementById("loginProfileIcon").style.display = "none";
-    document.body.style.overflow = "hidden";
   }, []);
   return (
-    <div>
+    <section id="login">
       <div className="backdrop" id="backdrop">
         .
       </div>
@@ -91,7 +90,7 @@ function LoginSignup() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

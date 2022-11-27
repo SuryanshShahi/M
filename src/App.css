@@ -1,8 +1,4 @@
-.slider::-webkit-scrollbar,
-.sidebar::-webkit-scrollbar,
-.content::-webkit-scrollbar,
-.drawer::-webkit-scrollbar,
-.dealsRow::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0px;
   height: 0px;
 }
@@ -13,7 +9,12 @@
   display: block;
   animation: fadeIn 0.4s linear forwards;
 }
-.loginBtn:hover{
+#navbarSupportedContent .nav-item {
+  height: 80px;
+  align-items: center;
+  display: flex;
+}
+.loginBtn:hover {
   background-color: #ff3f6c !important;
   color: white !important;
 }
@@ -67,8 +68,12 @@ button:focus {
 .dropdown-menu {
   opacity: 1;
   background-color: transparent !important;
-  top: 55px;
+  /* top: 77px; */
   left: 0;
+  padding: 0;
+  margin: 0;
+  /* margin-top: 3px; */
+  color: "#282C3F" !important;
 }
 .dropdown-menu .row {
   width: 70vw;
@@ -78,6 +83,7 @@ button:focus {
   padding: 5px 0px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 14px;
+  color: "#282C3F" !important;
 }
 
 @media (max-width: 990px) {
@@ -317,17 +323,25 @@ input[type="radio"] {
 table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-table td, th{
+table td,
+th {
   font-size: 13px;
   color: black;
   padding: 10px 15px;
 }
-table .tt{
+table .tt {
   padding: 5px 15px !important;
   font-size: 12px;
   color: #7e818c;
 }
-.dropdown-menu li:hover{
+.dropdown-menu li:hover {
   font-weight: 600 !important;
   cursor: pointer;
+}
+
+/* ------------------Signup----------------------- */
+@media (max-width: 760px) {
+  .signupWidth {
+    width: auto !important;
+  }
 }

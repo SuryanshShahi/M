@@ -44,7 +44,9 @@ import Spotlight from "./images/spotlight.gif";
 
 function Home() {
   window.scroll(0, 0);
-
+  useEffect(()=>{
+    document.getElementById("loginProfileIcon").style.display = "block";
+  },[])
 
   return (
     <div style={{ marginTop: "100px" }}>
