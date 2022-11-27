@@ -643,7 +643,7 @@ function Navbar() {
                   <NavLink
                     to="/"
                     className="nav-link text-dark homeLiving"
-                    style={{ fontWeight: "600", width:"127px" }}
+                    style={{ fontWeight: "600", width: "127px" }}
                   >
                     HOME & LIVING
                   </NavLink>
@@ -1027,7 +1027,7 @@ function Navbar() {
 
                 <li className="nav-item searchbar w-50 pl-lg-5 pt-lg-0 pt-3">
                   {" "}
-                  <form className="d-flex align-items-center pr-3 position-relative">
+                  <form className="d-flex align-items-center mr-3 position-relative">
                     <div
                       className="fa fa-search pl-3"
                       style={{
@@ -1084,55 +1084,124 @@ function Navbar() {
               </ul>
 
               <div className="list-unstyled align-items-center justify-content-center py-lg-0 py-4 d-flex ml-lg-auto mb-2 mb-lg-0 d-flex">
-                <div className="px-3" style={{ width: "fit-content" }}>
-                  <div className=" text-center">
-                    <div
-                      className="fa fa-user-o"
-                      style={{ fontSize: "17px" }}
-                    ></div>
-                    <div style={{ fontSize: "12px" }}>
-                      <div style={{ fontWeight: "500" }}>Profile</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="px-3" style={{ width: "fit-content" }}>
-                  <div className=" text-center">
-                    <div
-                      className="fa fa-heart-o"
-                      style={{ fontSize: "17px" }}
-                    ></div>
-                    <div style={{ fontSize: "12px" }}>
-                      <div style={{ fontWeight: "500" }}>WhishList</div>
-                    </div>
-                  </div>
-                </div>
                 <div
-                  className="px-3 d-flex position-relative"
+                  className="px-2 navbar-nav"
                   style={{ width: "fit-content" }}
                 >
-                  <NavLink
-                    to={`/myntra/${1}/bag`}
-                    className="fa fa-shopping-bag text-decoration-none text-dark"
-                  >
-                    <div className="text-center font-weight-bold pt-2">
-                      <div style={{ fontSize: "12px" }}>
-                        <div style={{ fontWeight: "500" }}>Bag</div>
+                  <div className=" text-center nav-item">
+                    <NavLink
+                      to="/"
+                      className="nav-link text-dark"
+                      style={{ fontWeight: "600" }}
+                    >
+                      <div>
+                        <div
+                          className="fa fa-user-o"
+                          style={{ fontSize: "17px" }}
+                        ></div>
+                        <div style={{ fontSize: "12px", fontWeight: "500" }}>
+                          Profile
+                        </div>
+                      </div>
+                    </NavLink>
+                    <div
+                      className="dropdown-menu rounded-0 border-0"
+                      style={{ left: "76%" }}
+                    >
+                      <div
+                        className="p-3 bg-white mt-4 shadow-lg"
+                        style={{ width: "20vw" }}
+                      >
+                        <ul
+                          className="list-unstyled m-0"
+                          style={{ fontSize: "14px", color: "#3e4152" }}
+                        >
+                          <NavLink
+                            to="/profile"
+                            className="text-decoration-none"
+                          >
+                            <div
+                              style={{ ottom: "1px solid #8080804d" }}
+                            >
+                              <div
+                                className="text-dark"
+                                style={{ fontWeight: "600" }}
+                              >
+                                Hello User
+                              </div>
+                              <div
+                                className="mb-1"
+                                style={{ color: "#3e4152" }}
+                              >
+                                73xxxxxxxx
+                              </div>
+                            </div>
+                          </NavLink>
+                          <li style={{ marginTop: "12px" }}>Orders</li>
+                          <li>Whishlist</li>
+                          <li>Gift Cards</li>
+                          <li>Contact Us</li>
+                          <li>
+                            Myntra Insider
+                            <span
+                              className="bg-danger rounded-pill text-white ml-3"
+                              style={{ fontSize: "10px", padding: "2px 5px" }}
+                            >
+                              New
+                            </span>
+                          </li>
+                          <hr></hr>
+                          <li>Myntra Credit</li>
+                          <li>Coupons</li>
+                          <li>Saved Cards</li>
+                          <li>Saved VPA</li>
+                          <li>Saved Addresses</li>
+                          <hr></hr>
+                          <li>Edit Profile</li>
+                          <li>Logout</li>
+                        </ul>
                       </div>
                     </div>
-                  </NavLink>
-                  <span
-                    className="badge bg-danger position-absolute ml-3 mb-2"
-                    style={{
-                      fontSize: "10px",
-                      height: "fit-content",
-                      borderRadius: "50px",
-                      top: "-5px",
-                      left: "11px",
-                    }}
-                  >
-                    1
-                  </span>
+                  </div>
                 </div>
+              </div>
+              <div className="px-3" style={{ width: "fit-content" }}>
+                <div className=" text-center">
+                  <div
+                    className="fa fa-heart-o"
+                    style={{ fontSize: "17px" }}
+                  ></div>
+                  <div style={{ fontSize: "12px" }}>
+                    <div style={{ fontWeight: "500" }}>WhishList</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="px-3 d-flex position-relative"
+                style={{ width: "fit-content" }}
+              >
+                <NavLink
+                  to={`/myntra/${1}/bag`}
+                  className="fa fa-shopping-bag text-decoration-none text-dark"
+                >
+                  <div className="text-center font-weight-bold pt-2">
+                    <div style={{ fontSize: "12px" }}>
+                      <div style={{ fontWeight: "500" }}>Bag</div>
+                    </div>
+                  </div>
+                </NavLink>
+                <span
+                  className="badge bg-danger position-absolute ml-3 mb-2"
+                  style={{
+                    fontSize: "10px",
+                    height: "fit-content",
+                    borderRadius: "50px",
+                    top: "-5px",
+                    left: "11px",
+                  }}
+                >
+                  1
+                </span>
               </div>
             </div>
           </div>
@@ -1262,7 +1331,10 @@ function Navbar() {
                           className="bg-white my-3 p-2"
                           style={{ boxShadow: "0px 0px 0px 1px #c0c0c094" }}
                         >
-                          <h2 className="py-1" style={{ fontSize: "12px", fontWeight:"500" }}>
+                          <h2
+                            className="py-1"
+                            style={{ fontSize: "12px", fontWeight: "500" }}
+                          >
                             RECENT SEARCHES
                           </h2>
                           <div className="dealsRow">
@@ -1280,7 +1352,12 @@ function Navbar() {
                                       alt="Deals of the day"
                                     />
                                   </NavLink>
-                                  <div className="text-center pt-2" style={{fontSize:"12px"}}>Name</div>
+                                  <div
+                                    className="text-center pt-2"
+                                    style={{ fontSize: "12px" }}
+                                  >
+                                    Name
+                                  </div>
                                 </div>
                               ))}
                             </div>
@@ -1292,7 +1369,7 @@ function Navbar() {
                           style={{ boxShadow: "0px 0px 0px 1px #c0c0c094" }}
                         >
                           <h2 className="py-1" style={{ fontSize: "12px" }}>
-                           TRENDING ON MYNTRA
+                            TRENDING ON MYNTRA
                           </h2>
                           <div className="dealsRow">
                             <div className="d-flex">
@@ -1400,7 +1477,7 @@ function Navbar() {
                 <div className="px-3 pt-2 pb-1">
                   {sidebar.map((e) => {
                     return (
-                      <div key={e.id} style={{paddingBottom:"5px"}}>
+                      <div key={e.id} style={{ paddingBottom: "5px" }}>
                         <Accordion flush>
                           <Accordion.Item eventKey={e.id}>
                             <Accordion.Header>
@@ -1421,7 +1498,12 @@ function Navbar() {
                             <Accordion.Body>
                               {e.subField.map((e1) => {
                                 return (
-                                  <Accordion flush key={e1.id} id="alignInnerMenu" style={{paddingBottom:"5px"}}>
+                                  <Accordion
+                                    flush
+                                    key={e1.id}
+                                    id="alignInnerMenu"
+                                    style={{ paddingBottom: "5px" }}
+                                  >
                                     <Accordion.Item eventKey="0">
                                       <Accordion.Header>
                                         <div className="d-flex align-items-center">

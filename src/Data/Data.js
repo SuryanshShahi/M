@@ -960,6 +960,8 @@ export const sidebar = [
   },
 ];
 
+// ----------------------------------searchBar----------------------------------
+
 export const search = [
   "T-Shirts",
   "Casual Shirts",
@@ -1239,4 +1241,41 @@ export const search = [
   "KAMA AYURVEDA",
   "M.A.C",
   "Forest Essentials",
+];
+
+// ----------------------------------profile----------------------------------
+
+export const userProfile = [
+  {
+    Field: "Full Name",
+    value: "-not added-",
+  },
+  {
+    Field: "Mobile Number",
+    value: "-not added-",
+  },
+  {
+    Field: "Email ID",
+    value: "-not added-",
+  },
+  {
+    Field: "Gender",
+    value: "-not added-",
+  },
+  {
+    Field: "Date of Birth",
+    value: "-not added-",
+  },
+  {
+    Field: "Location",
+    value: "-not added-",
+  },
+  {
+    Field: "Alternate Mobile",
+    value: "-not added-",
+  },
+  {
+    Field: "Hint Name",
+    value: "-not added-",
+  },
 ];

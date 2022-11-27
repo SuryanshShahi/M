@@ -39,12 +39,11 @@ import {
   BudgetPicks,
   TrendingOutfits,
 } from "../Data/Data";
-// import Carousel from "react-material-ui-carousel";
 import Donate from "./images/Donation.webp";
 import Spotlight from "./images/spotlight.gif";
 
 function Home() {
-
+  window.scroll(0, 0);
 
 
   return (
