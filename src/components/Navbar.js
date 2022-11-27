@@ -75,7 +75,7 @@ function Navbar() {
             </div>
 
             <div
-              className="collapse navbar-collapse pl-lg-3 pt-md-3"
+              className="collapse navbar-collapse pl-lg-3"
               id="navbarSupportedContent"
             >
               <ul
