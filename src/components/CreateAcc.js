@@ -18,7 +18,7 @@ function CreateAcc() {
         style={{ height: "100vh", background: "rgb(255 192 203 / 30%)" }}
       >
         <div
-          className="bg-white p-4 mx-3"
+          className="bg-white p-lg-4 p-md-4 p-3 mx-3"
           style={{ maxWidth: "400px", height: "fit-content" }}
         >
           <img src={create} className="img-fluid w-100" />

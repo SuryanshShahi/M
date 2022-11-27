@@ -4,6 +4,7 @@ import logo from "./images/myntra.png";
 import app from "./images/downloadApp.jpeg";
 import Accordion from "react-bootstrap/Accordion";
 import { search, sidebar, Deals } from "../Data/Data";
+import loginImg from "./images/loginSignUp.webp";
 
 function Navbar() {
   const [isactive, setActive] = useState(false);
@@ -74,7 +75,7 @@ function Navbar() {
             </div>
 
             <div
-              className="collapse navbar-collapse pl-lg-3"
+              className="collapse navbar-collapse pl-lg-3 pt-md-3"
               id="navbarSupportedContent"
             >
               <ul
@@ -83,7 +84,7 @@ function Navbar() {
               >
                 <li
                   style={{ width: "fit-content", fontSize: "15px" }}
-                  className="nav-item px-2"
+                  className="nav-item px-2 py-lg-0 py-2 align-items-center d-lg-flex"
                   id="men"
                   onMouseOver={() =>
                     (document.getElementById("backdrop").style.display =
@@ -240,7 +241,7 @@ function Navbar() {
 
                 <li
                   style={{ width: "fit-content", fontSize: "15px" }}
-                  className="nav-item px-2"
+                  className="nav-item px-2 py-lg-0 py-2 align-items-center d-lg-flex"
                   id="women"
                   onMouseOver={() =>
                     (document.getElementById("backdrop").style.display =
@@ -251,7 +252,7 @@ function Navbar() {
                   }
                 >
                   <NavLink
-                    to="/myntra"
+                    to="/"
                     className="nav-link text-dark"
                     style={{ fontWeight: "600" }}
                     onMouseOver={() =>
@@ -429,7 +430,7 @@ function Navbar() {
 
                 <li
                   style={{ width: "fit-content", fontSize: "15px" }}
-                  className="nav-item px-2"
+                  className="nav-item px-2 py-lg-0 py-2 align-items-center d-lg-flex"
                   id="kids"
                   onMouseOver={() =>
                     (document.getElementById("backdrop").style.display =
@@ -595,7 +596,7 @@ function Navbar() {
 
                 <li
                   style={{ width: "fit-content", fontSize: "15px" }}
-                  className="nav-item px-2"
+                  className="nav-item px-2 py-lg-0 py-2 align-items-center d-lg-flex"
                   id="h&l"
                   onMouseOver={() =>
                     (document.getElementById("backdrop").style.display =
@@ -769,7 +770,7 @@ function Navbar() {
 
                 <li
                   style={{ width: "fit-content", fontSize: "15px" }}
-                  className="nav-item px-2"
+                  className="nav-item px-2 py-lg-0 py-2 align-items-center d-lg-flex"
                   id="beauty"
                   onMouseOver={() =>
                     (document.getElementById("backdrop").style.display =
@@ -945,7 +946,7 @@ function Navbar() {
 
                 <li
                   style={{ width: "fit-content", fontSize: "15px" }}
-                  className="nav-item px-2"
+                  className="nav-item px-2 py-lg-0 py-2 align-items-center d-lg-flex"
                   id="studio"
                 >
                   <NavLink
@@ -1032,7 +1033,7 @@ function Navbar() {
                   id="loginProfileIcon"
                   style={{ width: "fit-content" }}
                 >
-                  <div className="text-center nav-item">
+                  <div className="text-center nav-item align-items-center d-lg-flex">
                     <NavLink
                       to="/"
                       className="nav-link text-dark"
@@ -1419,7 +1420,11 @@ function Navbar() {
                 overflowY: "scroll",
               }}
             >
-              <div className="p-3" style={{ background: "#272027fa" }}>
+              <div
+                className="p-3"
+                id="userLoggedIn"
+                style={{ background: "#272027fa", display: "none" }}
+              >
                 <div className="d-flex">
                   <div
                     className="fa fa-user-o fa-lg rounded bg-white shadow-lg"
@@ -1437,6 +1442,70 @@ function Navbar() {
                   <div className="text-white shadow-lg">user</div>
                   <div className="ml-auto fa fa-angle-right text-white"></div>
                 </div>
+              </div>
+              <div className="position-relative" id="userNotLoggedIn">
+                <div
+                  className="ml-auto m-2 position-absolute pt-2 text-center"
+                  style={{
+                    background: "rgb(0,0,0,0.6)",
+                    borderRadius: "50px",
+                    right:0,
+                    fontSize: "24px",
+                    width:"20px",
+                    height:"20px",
+                    cursor:"pointer",
+                    lineHeight:"0",
+                    zIndex: "1",
+                    color:"white"
+                  }}
+                  onClick={closeDrawer}
+                >
+                &times;
+                </div>
+                <NavLink to="/login">
+                  <img src={loginImg} className="img-fluid" />
+                  <div
+                    className="pl-3 position-absolute align-items-center d-flex"
+                    style={{
+                      width: "calc(57%)",
+                      background: "rgb(255 241 243)",
+                      color: "red",
+                      bottom: "0",
+                      height: "100%",
+                      left: "0",
+                    }}
+                  >
+                    <div>
+                      <div className="Off">
+                        <div
+                          style={{ fontWeight: "700", fontSize: "18px" }}
+                          className="text-dark"
+                        >
+                          Flat ₹200 OFF
+                        </div>
+                        <div
+                          style={{ fontWeight: "700", fontSize: "18px" }}
+                          className="text-dark"
+                        >
+                          + Free Shiping
+                        </div>
+                        <div
+                          className="mt-1"
+                          style={{ color: "grey", fontSize: "14px" }}
+                        >
+                          On First Order
+                        </div>
+                      </div>
+                      <div
+                        className="mt-2"
+                        style={{ fontWeight: "500", fontSize: "14px" }}
+                      >
+                        {" "}
+                        SIGN UP. LOGIN
+                      </div>
+                    </div>
+                  </div>
+                </NavLink>
               </div>
 
               <div className="" style={{ fontSize: "15px" }}>

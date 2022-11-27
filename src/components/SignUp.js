@@ -11,6 +11,8 @@ function SignUp() {
   const setupAcc = () => {
     document.getElementById("setupProfile").style.display = "block";
     document.getElementById("toLogin").style.display = "none";
+    document.getElementById("userLoggedIn").style.display = "block";
+    document.getElementById("userNotLoggedIn").style.display = "none";
     history.push("/");
   };
   return (
@@ -20,15 +22,16 @@ function SignUp() {
       </div>
       <div
         className="justify-content-center align-items-center mt-lg-5 mt-4 d-flex"
-        style={{ height: "100vh", background: "rgb(255 192 203 / 30%)" }}
+        style={{ minHeight: "100vh", background: "rgb(255 192 203 / 30%)" }}
       >
         <div
-          className="bg-white p-4 mx-3 signupWidth"
+          className="bg-white p-lg-4 p-md-4 p-3 mx-3 signupWidth"
           style={{ height: "fit-content", width: "500px" }}
         >
           <div className="mb-3" style={{ fontWeight: "600", fontSize: "18px" }}>
             Complete your sign up
           </div>
+          <form action="/">
           <div>
             <div className="d-flex align-items-center">
               <div style={{ color: "grey" }}>Mobile Number</div>
@@ -41,7 +44,6 @@ function SignUp() {
               placeholder="Create Password"
               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
               style={{ height: "40px" }}
-              required
             />
             <div className="row gx-0">
               <div className="col-lg-3 col-md-3 col-sm-6 col-12 mt-2">
@@ -102,14 +104,12 @@ function SignUp() {
               type="text"
               placeholder="Full Name"
               style={{ height: "40px" }}
-              required
             />
             <input
               className="form-control shadow-none mt-4 mb-2 rounded-0"
               type="email"
               placeholder="Email (Optional)"
               style={{ height: "40px" }}
-              required
             />
             <div className="d-flex my-3" style={{ color: "grey" }}>
               {" "}
@@ -142,7 +142,6 @@ function SignUp() {
                 placeholder="Alternate Mobile Number"
                 pattern="[0-9]{10}"
                 style={{ height: "40px", paddingLeft: "54px" }}
-                required
               />
             </div>
             <label style={{ color: "#A9ABB3", fontSize: "14px" }}>
@@ -155,7 +154,6 @@ function SignUp() {
               type="text"
               placeholder="Hint name (Alternate number)"
               style={{ height: "40px" }}
-              required
             />
             <label
               className="mb-2"
@@ -172,6 +170,7 @@ function SignUp() {
           >
             CONTINUE
           </button>
+          </form>
         </div>
       </div>
     </section>

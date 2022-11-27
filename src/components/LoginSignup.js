@@ -6,6 +6,7 @@ function LoginSignup() {
     document.getElementById("footer").style.display = "none";
     document.getElementById("loginProfileIcon").style.display = "none";
   }, []);
+
   return (
     <section id="login">
       <div className="backdrop" id="backdrop">
@@ -20,7 +21,7 @@ function LoginSignup() {
           style={{ maxWidth: "400px", height: "80vh" }}
         >
           <img src={loginImg} className="img-fluid w-100" />
-          <div className="p-5">
+          <div className="p-lg-5 p-md-5 p-3">
             <div style={{ fontSize: "16px", color: "#535766" }}>
               <b style={{ color: "#424553", fontSize: "20px" }}>Login</b> or{" "}
               <b style={{ color: "#424553", fontSize: "20px" }}>Signup</b>
@@ -43,7 +44,6 @@ function LoginSignup() {
                   placeholder="Mobile Number"
                   pattern="[0-9]{10}"
                   style={{ height: "40px", paddingLeft: "54px" }}
-                  required
                 />
               </div>
               <label
