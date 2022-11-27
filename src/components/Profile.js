@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { userProfile } from "../Data/Data";
 import address from "./images/profile-address.png";
 import cards from "./images/profile-cards.png";
@@ -12,9 +12,21 @@ import points from "./images/profile-myntrapoints.png";
 import creditImg from "./images/creditImg.png";
 import upi from "./images/upi.png";
 import StarsRating from "stars-rating";
+import Accordion from "react-bootstrap/Accordion";
 
 function Profile() {
   window.scroll(0, 0);
+  const setAddress = () => {
+    var a = document.getElementById("default");
+    var b = document.getElementById("other");
+    if (a.style.display === "block") {
+      a.style.display = "none";
+      b.style.display = "block";
+    } else {
+      a.style.display = "block";
+      b.style.display = "none";
+    }
+  };
   return (
     <section>
       <div className="backdrop" id="backdrop">
@@ -101,7 +113,13 @@ function Profile() {
             >
               Saved VPA
             </li>
-            <li className="tab" href="#address" data-toggle="tab" type="button">
+            <li
+              className="tab"
+              href="#address"
+              data-toggle="tab"
+              type="button"
+              onClick={setAddress}
+            >
               Addresses
             </li>
             <li
@@ -547,7 +565,7 @@ function Profile() {
                           style={{
                             color: "#526cd0",
                             fontWeight: "500",
-                            fontSize: "14px",
+                            fontSize: "16px",
                           }}
                         >
                           TOP UP
@@ -561,7 +579,7 @@ function Profile() {
                           style={{
                             color: "#526cd0",
                             fontWeight: "500",
-                            fontSize: "14px",
+                            fontSize: "16px",
                           }}
                         >
                           ADD GIFT CARD
@@ -649,10 +667,323 @@ function Profile() {
                 </div>
               </div>
               <div id="myncash" className="tab-pane fade">
-                e1
+                <div
+                  className="justify-content-center d-flex"
+                  style={{ boxShadow: "0 1px 2px 0 rgb(0 0 0 / 25%)" }}
+                >
+                  <div className="w-50 text-center py-5">
+                    <div style={{ color: "#14cda8", fontWeight: "500" }}>
+                      TOTAL AVAILABLE MYNCASH
+                    </div>
+                    <div
+                      className="my-2"
+                      style={{ fontSize: "30px", fontWeight: "700" }}
+                    >
+                      0
+                    </div>
+                    <div style={{ fontSize: "12px" }}>
+                      Your total MynCash is worth ₹0.00
+                    </div>
+                    <div
+                      className="my-3"
+                      style={{ color: "#7e818c", fontSize: "12px" }}
+                    >
+                      You can pay upto 10% (may vary during the sale & promotion
+                      events) of your order value through MynCash. Use them on
+                      the Payments page during checkout.
+                    </div>
+                    <div style={{ fontSize: "14px" }}>
+                      You have <b>0</b> referral MynCash pending
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="justify-content-center d-flex mt-4"
+                  style={{ boxShadow: "0 1px 2px 0 rgb(0 0 0 / 25%)" }}
+                >
+                  <div className="w-100">
+                    <div
+                      className="p-3"
+                      style={{ fontWeight: "600", fontSize: "13px" }}
+                    >
+                      ACTIVE MYNCASH
+                    </div>
+                    <hr className="m-0"></hr>
+                    <table className="w-100 border-0">
+                      <tr>
+                        <th>DESCRIPTON</th>
+                        <th>CREDIT</th>
+                        <th>DEBIT</th>
+                        <th>BALANCE</th>
+                      </tr>
+                      <tr>
+                        <td>Promotion</td>
+                        <td>+ 200</td>
+                        <td>0</td>
+                        <td>+ 200</td>
+                      </tr>
+                      <tr>
+                        <td className="tt">
+                          Expiry: 14 Jun 2022 | 12:00:00 A.M
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Promotion</td>
+                        <td>+ 200</td>
+                        <td>0</td>
+                        <td>+ 200</td>
+                      </tr>
+                      <tr>
+                        <td className="tt">
+                          Expiry: 17 Jun 2022 | 11:59:59 P.M
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Promotion</td>
+                        <td>+ 130</td>
+                        <td>0</td>
+                        <td>+ 130</td>
+                      </tr>
+                      <tr>
+                        <td className="tt">
+                          Expiry: 23 Dec 2021 | 11:59:59 P.M
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Promotion</td>
+                        <td>+ 70</td>
+                        <td>0</td>
+                        <td>+ 70</td>
+                      </tr>
+                      <tr>
+                        <td className="tt">
+                          Expiry: 27 Nov 2021 | 11:59:00 P.M
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Promotion</td>
+                        <td>+ 200</td>
+                        <td>0</td>
+                        <td>+ 200</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div>
+                  <Accordion flush>
+                    <Accordion.Item
+                      eventKey={0}
+                      className="pb-2 mt-3"
+                      style={{ boxShadow: "0 1px 2px 0 rgb(0 0 0 / 25%)" }}
+                    >
+                      <Accordion.Header>
+                        <div
+                          className="d-flex px-2 text-dark align-items-center"
+                          style={{ fontWeight: "600", fontSize: "13px" }}
+                        >
+                          TRANSACTION LOGS
+                          <div className="ml-auto">
+                            <span
+                              id="changeArrow"
+                              className="fa fa-angle-right"
+                              style={{ color: "grey" }}
+                            ></span>
+                          </div>
+                        </div>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <hr></hr>
+                        <div
+                          className="d-flex px-3"
+                          style={{ fontSize: "13px" }}
+                        >
+                          <div>
+                            <div>Promotion</div>
+                            <div style={{ color: "#7e818c" }}>
+                              Credited To MynCash
+                            </div>
+                          </div>
+                          <div className="ml-auto">
+                            <div style={{ color: "#7e818c" }}>14 Jun 2022</div>
+                            <div
+                              style={{ color: "#14cda8", fontWeight: "500" }}
+                            >
+                              +200
+                            </div>
+                          </div>
+                        </div>
+                        <hr></hr>
+                        <div
+                          className="d-flex px-3"
+                          style={{ fontSize: "13px" }}
+                        >
+                          <div>
+                            <div>Promotion</div>
+                            <div style={{ color: "#7e818c" }}>
+                              Credited To MynCash
+                            </div>
+                          </div>
+                          <div className="ml-auto">
+                            <div style={{ color: "#7e818c" }}>14 Jun 2022</div>
+                            <div
+                              style={{ color: "#14cda8", fontWeight: "500" }}
+                            >
+                              +200
+                            </div>
+                          </div>
+                        </div>
+                        <hr></hr>
+                        <div
+                          className="d-flex px-3"
+                          style={{ fontSize: "13px" }}
+                        >
+                          <div>
+                            <div>Promotion</div>
+                            <div style={{ color: "#7e818c" }}>
+                              Credited To MynCash
+                            </div>
+                          </div>
+                          <div className="ml-auto">
+                            <div style={{ color: "#7e818c" }}>14 Jun 2022</div>
+                            <div
+                              style={{ color: "#14cda8", fontWeight: "500" }}
+                            >
+                              +200
+                            </div>
+                          </div>
+                        </div>
+                        <hr></hr>
+                        <div
+                          className="d-flex px-3"
+                          style={{ fontSize: "13px" }}
+                        >
+                          <div>
+                            <div>Promotion</div>
+                            <div style={{ color: "#7e818c" }}>
+                              Credited To MynCash
+                            </div>
+                          </div>
+                          <div className="ml-auto">
+                            <div style={{ color: "#7e818c" }}>14 Jun 2022</div>
+                            <div
+                              style={{ color: "#14cda8", fontWeight: "500" }}
+                            >
+                              +200
+                            </div>
+                          </div>
+                        </div>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item
+                      eventKey={1}
+                      className="pb-2 mt-3"
+                      style={{ boxShadow: "0 1px 2px 0 rgb(0 0 0 / 25%)" }}
+                    >
+                      <Accordion.Header>
+                        <div
+                          className="d-flex px-2 text-dark align-items-center"
+                          style={{ fontWeight: "600", fontSize: "13px" }}
+                        >
+                          ELIGIBILITY, MEMBERSHIP, ACCRUAL
+                          <div className="ml-auto">
+                            <span
+                              id="changeArrow"
+                              className="fa fa-angle-right"
+                              style={{ color: "grey" }}
+                            ></span>
+                          </div>
+                        </div>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <ul className="mx-4" style={{ color: "#7e818c", fontSize: "13px", textAlign:"justify" }}>
+                          <li className="mt-2">
+                            These terms and conditions are operational only in
+                            India and open to participation of all the
+                            registered members, resident of India of myntra,
+                            over and above the age of 18 years.
+                          </li>
+                          <li className="mt-2">
+                            My Privilege program has been converted into MynCash
+                            Program. The same denomination is applicable for
+                            MynCash.
+                          </li>
+                        </ul>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item
+                      eventKey={2}
+                      className="pb-2 mt-3"
+                      style={{ boxShadow: "0 1px 2px 0 rgb(0 0 0 / 25%)" }}
+                    >
+                      <Accordion.Header>
+                        <div
+                          className="d-flex px-2 text-dark align-items-center"
+                          style={{ fontWeight: "600", fontSize: "13px" }}
+                        >
+                        GENERAL TERMS AND CONDITIONS
+                          <div className="ml-auto">
+                            <span
+                              id="changeArrow"
+                              className="fa fa-angle-right"
+                              style={{ color: "grey" }}
+                            ></span>
+                          </div>
+                        </div>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <ul className="mx-4" style={{ color: "#7e818c", fontSize: "14px", textAlign:"justify" }}>
+                          <li className="mt-2">
+                            Each member is responsible for remaining
+                            knowledgeable about the Myntra Program Terms and
+                            Conditions and the MynCash in his or her account.
+                          </li>
+                          <li className="mt-2">
+                            Myntra will send correspondence to active members to
+                            advise them of matters of interest, including
+                            notification of Myntra Program changes and MynCash
+                            Updates.
+                          </li>
+                          <li className="mt-2">
+                            Myntra will not be liable or responsible for
+                            correspondence lost or delayed in the mail/e-mail.
+                          </li>
+                          <li className="mt-2">
+                            Myntra reserves the right to refuse, amend, vary or
+                            cancel membership of any Member without assigning
+                            any reason and without prior notification.
+                          </li>
+                          <li className="mt-2">
+                            Any change in the name, address, or other
+                            information relating to the Member must be notified
+                            to Myntra via the Helpdesk/email by the Member, as
+                            soon as possible at support@myntra.com or call at
+                            +91-80-43541999 24 Hours a Day / 7 Days a Week.
+                          </li>
+                          <li className="mt-2">
+                            Myntra reserves the right to add,modify,delete or
+                            otherwise change the Terms and Conditions without
+                            any approval, prior notice or reference to the
+                            Member.
+                          </li>
+                          <li className="mt-2">
+                            In the event of dispute in connection with Myntra
+                            Program and the interpretation of Terms and
+                            Conditions, Myntra's decision shall be final and
+                            binding.
+                          </li>
+                          <li className="mt-2">
+                            This Policy and these terms shall be read in
+                            conjunction with the standard legal policies of
+                            Myntra, including its Privacy policy.
+                          </li>
+                        </ul>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </Accordion>
+                </div>
               </div>
 
-              <div id="profile" className="tab-pane fade ">
+              <div id="profile" className="tab-pane fade">
                 <div
                   className="justify-content-center d-flex py-5"
                   style={{ border: "1px solid #8080804d", width: "100%" }}
@@ -731,6 +1062,7 @@ function Profile() {
                   </div>
                 </div>
               </div>
+
               <div id="vpa" className="tab-pane fade p-4 pt-3">
                 <div className="row gx-0">
                   <div
@@ -781,6 +1113,7 @@ function Profile() {
                   </div>
                 </div>
               </div>
+
               <div id="address" className="tab-pane fade">
                 <div className="d-flex">
                   <div
@@ -823,45 +1156,55 @@ function Profile() {
                       HOME
                     </div>
                   </div>
-                  <div className="p-3 pt-2" style={{color:"#696E79"}}>
+                  <div
+                    className="p-3 py-2"
+                    style={{ color: "#696E79" }}
+                    onClick={setAddress}
+                  >
                     aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                     <br></br>
                     aaaaaaaaaaaaaaaaaaaaaaaaaaaa<br></br>aaaaaaaaaaaaaaaaaaaaa
                     <br></br>aaaaaaaa
-
-                    <div className="pt-2">Mobile: xxxxxxxxxx</div>
                   </div>
-                  <hr></hr>
-                  <div className="row">
-                    <div
-                      className="text-center col-6"
-                      style={{ borderRight: "1px solid #8080804d" }}
-                    >
-                      <div
-                        style={{
-                          color: "#526cd0",
-                          fontWeight: "500",
-                          fontSize: "16px",
-                        }}
-                      >
-                        EDIT
-                      </div>
+                  <div id="default">
+                    <div className="pl-3" style={{ color: "#696E79" }}>
+                      Mobile: xxxxxxxxxx
                     </div>
-                    <div className="text-center col-6">
+                    <hr></hr>
+                    <div className="row">
                       <div
-                        style={{
-                          color: "#526cd0",
-                          fontWeight: "500",
-                          fontSize: "16px",
-                        }}
+                        className="text-center col-6"
+                        style={{ borderRight: "1px solid #8080804d" }}
                       >
-                        REMOVE
+                        <div
+                          style={{
+                            color: "#526cd0",
+                            fontWeight: "500",
+                            fontSize: "16px",
+                          }}
+                        >
+                          EDIT
+                        </div>
+                      </div>
+                      <div className="text-center col-6">
+                        <div
+                          style={{
+                            color: "#526cd0",
+                            fontWeight: "500",
+                            fontSize: "16px",
+                          }}
+                        >
+                          REMOVE
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="mt-4" style={{ fontWeight: "500", fontSize: "13px" }}>
+                <div
+                  className="mt-4"
+                  style={{ fontWeight: "500", fontSize: "13px" }}
+                >
                   OTHER ADDRESSES
                 </div>
                 <div
@@ -883,46 +1226,63 @@ function Profile() {
                       HOME
                     </div>
                   </div>
-                  <div className="p-3 pt-2" style={{color:"#696E79"}}>
+                  <div
+                    className="p-3 py-2"
+                    style={{ color: "#696E79" }}
+                    onClick={setAddress}
+                  >
                     aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                     <br></br>
                     aaaaaaaaaaaaaaaaaaaaaaaaaaaa<br></br>aaaaaaaaaaaaaaaaaaaaa
                     <br></br>aaaaaaaa
-
-                    
                   </div>
-                  <div className="pt-2 pl-3" style={{color:"#696E79"}}>Mobile: xxxxxxxxxx</div>
-                  <div className="pt-2 pl-3" style={{fontSize:"12px", color:"#14cda8", fontWeight:"700", cursor:"pointer"}}>MAKE THIS DEFAULT</div>
-                  <hr></hr>
-                  <div className="row">
-                    <div
-                      className="text-center col-6"
-                      style={{ borderRight: "1px solid #8080804d" }}
-                    >
-                      <div
-                        style={{
-                          color: "#526cd0",
-                          fontWeight: "500",
-                          fontSize: "16px",
-                        }}
-                      >
-                        EDIT
-                      </div>
+                  <div id="other" style={{ display: "none" }}>
+                    <div className="pl-3" style={{ color: "#696E79" }}>
+                      Mobile: xxxxxxxxxx
                     </div>
-                    <div className="text-center col-6">
+                    <div
+                      className="pt-2 pl-3"
+                      style={{
+                        fontSize: "12px",
+                        color: "#14cda8",
+                        fontWeight: "700",
+                        cursor: "pointer",
+                      }}
+                    >
+                      MAKE THIS DEFAULT
+                    </div>
+                    <hr></hr>
+                    <div className="row">
                       <div
-                        style={{
-                          color: "#526cd0",
-                          fontWeight: "500",
-                          fontSize: "16px",
-                        }}
+                        className="text-center col-6"
+                        style={{ borderRight: "1px solid #8080804d" }}
                       >
-                        REMOVE
+                        <div
+                          style={{
+                            color: "#526cd0",
+                            fontWeight: "500",
+                            fontSize: "16px",
+                          }}
+                        >
+                          EDIT
+                        </div>
+                      </div>
+                      <div className="text-center col-6">
+                        <div
+                          style={{
+                            color: "#526cd0",
+                            fontWeight: "500",
+                            fontSize: "16px",
+                          }}
+                        >
+                          REMOVE
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
               <div id="insider" className="tab-pane fade">
                 adsa
               </div>
