@@ -11,8 +11,6 @@ function SignUp() {
   const setupAcc = () => {
     document.getElementById("setupProfile").style.display = "block";
     document.getElementById("toLogin").style.display = "none";
-    document.getElementById("userLoggedIn").style.display = "block";
-    document.getElementById("userNotLoggedIn").style.display = "none";
     history.push("/");
   };
   return (
