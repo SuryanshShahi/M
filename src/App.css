@@ -9,12 +9,46 @@
   width: 0px;
   height: 0px;
 }
+
+.navbar.active {
+  animation: fadeIn 0.4s linear forwards;
+  box-shadow: 0 8px 20px 0 rgb(0 0 0 / 10%);
+}
+
+.navbar {
+  transition: all 0.9s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .item:hover {
   background: #eee;
 }
 .nav-item:hover .dropdown-menu {
   display: block;
-  animation: fadeIn 0.4s linear forwards;
+  animation: drop 0.4s linear forwards;
+}
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 #navbarSupportedContent .nav-item {
   height: 80px;
@@ -58,21 +92,9 @@ button:focus {
 #alignInnerMenu {
   padding-left: 12px;
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .dropdown-menu {
   opacity: 1;
-  /* background-color: transparent !important; */
   left: 0;
   padding: 0;
   margin: 0;
@@ -114,7 +136,7 @@ button:focus {
   #profile {
     display: none;
   }
-  #mobileProfile{
+  #mobileProfile {
     display: block !important;
   }
 }
@@ -247,16 +269,7 @@ input[type="radio"] {
   align-items: center;
 }
 
-@media (min-width: 990px) {
-  .signupWidth {
-    margin-top: 60px !important;
-    margin-bottom: 30px !important;
-  }
-}
 @media (max-width: 990px) {
-  .signupWidth {
-    margin-top: 50px !important;
-  }
   .bagpath {
     display: none;
   }

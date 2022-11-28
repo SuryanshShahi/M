@@ -14,6 +14,7 @@ import Login from "./components/LoginSignup";
 import CreateAccount from "./components/CreateAcc";
 import Profile from "./components/Profile";
 import SignUp from "./components/SignUp";
+import Orders from "./components/profile/Orders";
 
 const App = () => {
   useEffect(() => {
@@ -33,6 +34,7 @@ const App = () => {
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/createAccount" component={CreateAccount} />
             <Route exact path="/signup" component={SignUp} />
+            <Route exact path="/orders" component={Orders} />
           </div>
         </Switch>
         <Footer />

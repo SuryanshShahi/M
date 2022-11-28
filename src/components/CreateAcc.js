@@ -6,6 +6,7 @@ function CreateAcc() {
   window.scroll(0, 0);
   useEffect(() => {
     document.getElementById("footer").style.display = "none";
+    document.body.style.background = "rgb(255 192 203 / 30%)";
     // document.getElementById("loginProfileIcon").style.display = "none";
   }, []);
   return (
@@ -14,8 +15,7 @@ function CreateAcc() {
         .
       </div>
       <div
-        className="justify-content-center align-items-center mt-lg-5 d-flex"
-        style={{ height: "100vh", background: "rgb(255 192 203 / 30%)" }}
+        className="justify-content-center mt-5 align-items-center d-flex"
       >
         <div
           className="bg-white p-lg-4 p-md-4 p-3 mx-3"

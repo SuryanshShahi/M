@@ -13,6 +13,20 @@ function Navbar() {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchBar, setSearchBar] = useState(false);
 
+  const slideNav = () => {
+    var x = document.getElementById("navbar");
+    if (window.scrollY >= 100) {
+      if (x.classList == "active") {
+        x.classList.remove("active");
+      } else {
+        x.classList.add("active");
+      }
+    } else {
+      x.classList.remove("active");
+    }
+  };
+  window.addEventListener("scroll", slideNav);
+
   useEffect(() => {
     const changeNav = () => {
       if (window.innerWidth >= 575) {
@@ -46,11 +60,16 @@ function Navbar() {
     setSearchTerm(e.target.value);
   };
   return (
-    <section id="navbar">
+    <section
+      className="position-sticky"
+      id="header"
+      style={{ zIndex: "6", top: "0" }}
+    >
       {!isactive ? (
         <nav
-          className="navbar navbar-expand-lg fixed-top bg-white p-0 m-0 px-lg-5 px-md-4"
-          style={{ boxShadow: "0 4px 12px 0 rgb(0 0 0 / 5%)", zIndex: "6" }}
+          id="navbar"
+          className="navbar navbar-expand-lg bg-white p-0 m-0 px-lg-5 px-md-4"
+          style={{ boxShadow: "0 4px 12px 0 rgb(0 0 0 / 5%)" }}
         >
           <div className="navbar-nav w-100 px-3">
             <div className="align-items-center d-flex">
@@ -1174,7 +1193,7 @@ function Navbar() {
           </div>
         </nav>
       ) : (
-        <nav
+        <nav id="navbar"
           className="navbar navbar-expand-lg fixed-top bg-white p-0 m-0 px-lg-5"
           style={{ boxShadow: "0 4px 12px 0 rgb(0 0 0 / 5%)", zIndex: "6" }}
         >
@@ -1444,24 +1463,28 @@ function Navbar() {
                 </div>
               </div>
 
-              <div className="position-relative" id="userNotLoggedIn" style={{display:"block"}}>
+              <div
+                className="position-relative"
+                id="userNotLoggedIn"
+                style={{ display: "block" }}
+              >
                 <div
                   className="ml-auto m-2 position-absolute pt-2 text-center"
                   style={{
                     background: "rgb(0,0,0,0.6)",
                     borderRadius: "50px",
-                    right:0,
+                    right: 0,
                     fontSize: "24px",
-                    width:"20px",
-                    height:"20px",
-                    cursor:"pointer",
-                    lineHeight:"0",
+                    width: "20px",
+                    height: "20px",
+                    cursor: "pointer",
+                    lineHeight: "0",
                     zIndex: "1",
-                    color:"white"
+                    color: "white",
                   }}
                   onClick={closeDrawer}
                 >
-                &times;
+                  &times;
                 </div>
                 <NavLink to="/login" onClick={closeDrawer}>
                   <img src={loginImg} className="img-fluid" />

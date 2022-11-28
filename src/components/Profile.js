@@ -13,6 +13,7 @@ import creditImg from "./images/creditImg.png";
 import upi from "./images/upi.png";
 import StarsRating from "stars-rating";
 import Accordion from "react-bootstrap/Accordion";
+import { NavLink } from "react-router-dom";
 
 function Profile() {
   window.scroll(0, 0);
@@ -33,9 +34,8 @@ function Profile() {
         .
       </div>
       <div
-        className="container-lg container-fluid"
+        className="container-lg mt-5 container-fluid"
         id="profile"
-        style={{ marginTop: "170px" }}
       >
         <div className="mt-3" style={{ borderBottom: "1px solid #8080804d" }}>
           <div style={{ fontWeight: "700", fontSize: "19px" }}>Account</div>
@@ -1332,146 +1332,189 @@ function Profile() {
           className="my-2 bg-white"
           style={{ boxShadow: "0 0 4px rgb(40 44 63 / 8%)" }}
         >
-          <div
-            className="d-flex p-2 px-3 align-items-center"
-            data-target="#mymodal"
-            data-toggle="modal"
-          >
-            <img src={orders} className="img-fluid" style={{ width: "25px" }} />
-            <div className="ml-3">
-              <div style={{ fontSize: "15px", fontWeight: "500" }}>Orders</div>
-              <div style={{ fontSize: "12px", color: "#94969F" }}>
-                Check your order status
+          <NavLink to="/orders" className="text-decoration-none text-dark">
+            <div className="d-flex p-2 px-3 align-items-center">
+              <img
+                src={orders}
+                className="img-fluid"
+                style={{ width: "25px" }}
+              />
+              <div className="ml-3">
+                <div style={{ fontSize: "15px", fontWeight: "500" }}>
+                  Orders
+                </div>
+                <div style={{ fontSize: "12px", color: "#94969F" }}>
+                  Check your order status
+                </div>
               </div>
+              <div className="fa fa-angle-right ml-auto"></div>
             </div>
-            <div className="fa fa-angle-right ml-auto"></div>
-          </div>
+          </NavLink>
           <hr className="m-0" style={{ color: "#A9ABB3" }}></hr>
-          <div className="d-flex p-2 px-3 align-items-center">
-            <img
-              src={collections}
-              className="img-fluid"
-              style={{ width: "25px" }}
-            />
-            <div className="ml-3">
-              <div style={{ fontSize: "15px", fontWeight: "500" }}>
-                Collections
+          <NavLink to="/collections" className="text-decoration-none text-dark">
+            {" "}
+            <div className="d-flex p-2 px-3 align-items-center">
+              <img
+                src={collections}
+                className="img-fluid"
+                style={{ width: "25px" }}
+              />
+              <div className="ml-3">
+                <div style={{ fontSize: "15px", fontWeight: "500" }}>
+                  Collections
+                </div>
+                <div style={{ fontSize: "12px", color: "#94969F" }}>
+                  All your curated product collections
+                </div>
               </div>
-              <div style={{ fontSize: "12px", color: "#94969F" }}>
-                All your curated product collections
-              </div>
+              <div className="fa fa-angle-right ml-auto"></div>
             </div>
-            <div className="fa fa-angle-right ml-auto"></div>
-          </div>
+          </NavLink>
         </div>
 
         <div
           className="my-2 bg-white"
           style={{ boxShadow: "0 0 4px rgb(40 44 63 / 8%)" }}
         >
-          <div className="d-flex p-2 px-3 align-items-center">
-            <img src={credit} className="img-fluid" style={{ width: "25px" }} />
-            <div className="ml-3">
-              <div style={{ fontSize: "15px", fontWeight: "500" }}>
-                Myntra Credit
+          <NavLink to="/credit" className="text-decoration-none text-dark">
+            <div className="d-flex p-2 px-3 align-items-center">
+              <img
+                src={credit}
+                className="img-fluid"
+                style={{ width: "25px" }}
+              />
+              <div className="ml-3">
+                <div style={{ fontSize: "15px", fontWeight: "500" }}>
+                  Myntra Credit
+                </div>
+                <div style={{ fontSize: "12px", color: "#94969F" }}>
+                  Manage all your refunds & gift cards
+                </div>
               </div>
-              <div style={{ fontSize: "12px", color: "#94969F" }}>
-                Manage all your refunds & gift cards
-              </div>
+              <div className="fa fa-angle-right ml-auto"></div>
             </div>
-            <div className="fa fa-angle-right ml-auto"></div>
-          </div>
+          </NavLink>
           <hr className="m-0" style={{ color: "#A9ABB3" }}></hr>
-          <div className="d-flex p-2 px-3 align-items-center">
-            <img src={points} className="img-fluid" style={{ width: "25px" }} />
-            <div className="ml-3">
-              <div style={{ fontSize: "15px", fontWeight: "500" }}>MynCash</div>
-              <div style={{ fontSize: "12px", color: "#94969F" }}>
-                Earn MynCash as you shop and use them in checkout
+          <NavLink to="/myncash" className="text-decoration-none text-dark">
+            {" "}
+            <div className="d-flex p-2 px-3 align-items-center">
+              <img
+                src={points}
+                className="img-fluid"
+                style={{ width: "25px" }}
+              />
+              <div className="ml-3">
+                <div style={{ fontSize: "15px", fontWeight: "500" }}>
+                  MynCash
+                </div>
+                <div style={{ fontSize: "12px", color: "#94969F" }}>
+                  Earn MynCash as you shop and use them in checkout
+                </div>
               </div>
+              <div className="fa fa-angle-right ml-auto"></div>
             </div>
-            <div className="fa fa-angle-right ml-auto"></div>
-          </div>
+          </NavLink>
           <hr className="m-0" style={{ color: "#A9ABB3" }}></hr>
-          <div className="d-flex p-2 px-3 align-items-center">
-            <img src={cards} className="img-fluid" style={{ width: "25px" }} />
-            <div className="ml-3">
-              <div style={{ fontSize: "15px", fontWeight: "500" }}>
-                Saved Cards
+          <NavLink to="/cards" className="text-decoration-none text-dark">
+            {" "}
+            <div className="d-flex p-2 px-3 align-items-center">
+              <img
+                src={cards}
+                className="img-fluid"
+                style={{ width: "25px" }}
+              />
+              <div className="ml-3">
+                <div style={{ fontSize: "15px", fontWeight: "500" }}>
+                  Saved Cards
+                </div>
+                <div style={{ fontSize: "12px", color: "#94969F" }}>
+                  Save your cards for faster checkout
+                </div>
               </div>
-              <div style={{ fontSize: "12px", color: "#94969F" }}>
-                Save your cards for faster checkout
-              </div>
+              <div className="fa fa-angle-right ml-auto"></div>
             </div>
-            <div className="fa fa-angle-right ml-auto"></div>
-          </div>
+          </NavLink>
           <hr className="m-0" style={{ color: "#A9ABB3" }}></hr>
-          <div className="d-flex p-2 px-3 align-items-center">
-            <img
-              src={upiIcon}
-              className="img-fluid"
-              style={{ width: "25px" }}
-            />
-            <div className="ml-3">
-              <div style={{ fontSize: "15px", fontWeight: "500" }}>
-                Saved VPA
+          <NavLink to="/upi" className="text-decoration-none text-dark">
+            {" "}
+            <div className="d-flex p-2 px-3 align-items-center">
+              <img
+                src={upiIcon}
+                className="img-fluid"
+                style={{ width: "25px" }}
+              />
+              <div className="ml-3">
+                <div style={{ fontSize: "15px", fontWeight: "500" }}>
+                  Saved VPA
+                </div>
+                <div style={{ fontSize: "12px", color: "#94969F" }}>
+                  View your saved VPA
+                </div>
               </div>
-              <div style={{ fontSize: "12px", color: "#94969F" }}>
-                View your saved VPA
-              </div>
+              <div className="fa fa-angle-right ml-auto"></div>
             </div>
-            <div className="fa fa-angle-right ml-auto"></div>
-          </div>
+          </NavLink>
           <hr className="m-0" style={{ color: "#A9ABB3" }}></hr>
-          <div className="d-flex p-2 px-3 align-items-center">
-            <img
-              src={address}
-              className="img-fluid"
-              style={{ width: "25px" }}
-            />
-            <div className="ml-3">
-              <div style={{ fontSize: "15px", fontWeight: "500" }}>
-                Addresses
+          <NavLink to="/address" className="text-decoration-none text-dark">
+            {" "}
+            <div className="d-flex p-2 px-3 align-items-center">
+              <img
+                src={address}
+                className="img-fluid"
+                style={{ width: "25px" }}
+              />
+              <div className="ml-3">
+                <div style={{ fontSize: "15px", fontWeight: "500" }}>
+                  Addresses
+                </div>
+                <div style={{ fontSize: "12px", color: "#94969F" }}>
+                  Save addresses for a hassle-free checkout
+                </div>
               </div>
-              <div style={{ fontSize: "12px", color: "#94969F" }}>
-                Save addresses for a hassle-free checkout
-              </div>
+              <div className="fa fa-angle-right ml-auto"></div>
             </div>
-            <div className="fa fa-angle-right ml-auto"></div>
-          </div>
+          </NavLink>
           <hr className="m-0" style={{ color: "#A9ABB3" }}></hr>
-          <div className="d-flex p-2 px-3 align-items-center">
-            <img
-              src={coupons}
-              className="img-fluid"
-              style={{ width: "25px" }}
-            />
-            <div className="ml-3">
-              <div style={{ fontSize: "15px", fontWeight: "500" }}>Coupons</div>
-              <div style={{ fontSize: "12px", color: "#94969F" }}>
-                Manage coupons for additional discounts
+          <NavLink to="/coupons" className="text-decoration-none text-dark">
+            {" "}
+            <div className="d-flex p-2 px-3 align-items-center">
+              <img
+                src={coupons}
+                className="img-fluid"
+                style={{ width: "25px" }}
+              />
+              <div className="ml-3">
+                <div style={{ fontSize: "15px", fontWeight: "500" }}>
+                  Coupons
+                </div>
+                <div style={{ fontSize: "12px", color: "#94969F" }}>
+                  Manage coupons for additional discounts
+                </div>
               </div>
+              <div className="fa fa-angle-right ml-auto"></div>
             </div>
-            <div className="fa fa-angle-right ml-auto"></div>
-          </div>
+          </NavLink>
         </div>
 
         <div
           className="my-2 bg-white"
           style={{ boxShadow: "0 0 4px rgb(40 44 63 / 8%)" }}
         >
-          <div className="d-flex p-2 px-3 align-items-center">
-            <img src={edit} className="img-fluid" style={{ width: "25px" }} />
-            <div className="ml-3">
-              <div style={{ fontSize: "15px", fontWeight: "500" }}>
-                Profile Details
+          <NavLink to="/editProfile" className="text-decoration-none text-dark">
+            {" "}
+            <div className="d-flex p-2 px-3 align-items-center">
+              <img src={edit} className="img-fluid" style={{ width: "25px" }} />
+              <div className="ml-3">
+                <div style={{ fontSize: "15px", fontWeight: "500" }}>
+                  Profile Details
+                </div>
+                <div style={{ fontSize: "12px", color: "#94969F" }}>
+                  Chnage your profile details & password
+                </div>
               </div>
-              <div style={{ fontSize: "12px", color: "#94969F" }}>
-                Chnage your profile details & password
-              </div>
+              <div className="fa fa-angle-right ml-auto"></div>
             </div>
-            <div className="fa fa-angle-right ml-auto"></div>
-          </div>
+          </NavLink>
         </div>
 
         <div
@@ -1504,224 +1547,6 @@ function Profile() {
             style={{ background: "#f91111d6" }}
           >
             <b>LOGOUT</b>
-          </div>
-        </div>
-      </div>
-
-      <div className="modal fade " id="mymodal">
-        <div className="modal-dialog m-0 modal-xl">
-          <div className="justify-content-center d-flex">
-            <div
-              className="align-items-center text-white my-3 d-flex justify-content-center"
-              style={{
-                width: "40px",
-                height: "40px",
-                border: "2px solid black",
-                background: "rgb(0,0,0,0.5)",
-                borderRadius: "50px",
-                fontSize: "30px",
-                height: "40px",
-                cursor:"pointer",
-                paddingBottom: "3px",
-              }}
-              data-dismiss="modal"
-            >
-              &times;
-            </div>
-          </div>
-          <div className="modal-content" style={{ background: "#f5f5f5" }}>
-            <div
-              className="d-flex p-3 align-items-center"
-              style={{
-                backgroundImage: "linear-gradient(270deg,#f9daff,#dfefff)",
-              }}
-            >
-              <div className="">
-                <div style={{ fontWeight: "500" }}>MYNTRA INSIDER</div>
-                <div style={{ fontSize: "12px" }}>
-                  Earn 10 insider points for every ₹ 100 purchase
-                </div>
-              </div>
-              <div
-                className="btn btn-danger p-0 align-items-center d-flex px-2 ml-auto"
-                style={{
-                  height: "28px",
-                  fontWeight: "500",
-                  fontSize: "12px",
-                  lineHeight: "0",
-                }}
-              >
-                Enroll Now
-              </div>
-            </div>
-            <div className="d-flex p-3 mb-3 bg-white">
-              <div className="d-flex align-items-center mr-3 position-relative ml-auto">
-                <div
-                  className="fa fa-search pl-3"
-                  style={{
-                    zIndex: "1",
-                    color: "#808080d4",
-                    position: "absolute",
-                  }}
-                ></div>
-                <input
-                  className="form-control pl-5 shadow-none position-relative w-100"
-                  type="search"
-                  style={{ height: "45px" }}
-                  placeholder="Search in orders"
-                  aria-label="Search"
-                />
-                <div
-                  className="btn btn-dark bg-transparent text-dark align-items-center ml-3 d-flex"
-                  style={{ height: "45px", borderColor: "#ced4da" }}
-                >
-                  <span className="fa fa-sliders fa-lg pr-2"></span>
-                  <span style={{ fontWeight: "500" }}>Filter</span>
-                </div>
-              </div>
-            </div>
-            <div className="pb-3">
-              <div className="">
-                <div className="bg-white p-3">
-                  <div className="d-flex align-items-center" style={{fontSize:"14px"}}>
-                    <div
-                      className="fa fa-dropbox text-white align-items-center d-flex justify-content-center bg-dark fa-lg"
-                      style={{
-                        borderRadius: "50%",
-                        height: "35px",
-                        width: "35px",
-                      }}
-                    ></div>
-                    <div className="pl-3">
-                      <div className="text-info" style={{ fontWeight: "500" }}>
-                        Delivered
-                      </div>
-                      <div className="" style={{ fontSize: "12px" }}>
-                        On Tue, 15 Nov |{" "}
-                        <img src="https://myntraweb.blob.core.windows.net/selfserveui/assets/svg/mexpress-tag.svg" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    className="mt-4 deliveredCard"
-                    style={{ background: "#f5f5f5", transition: "0.3s", fontSize:"14px" }}
-                  >
-                    <div className="d-flex p-2 align-items-center">
-                      <img
-                        src={collections}
-                        style={{ height: "70px", width: "53px" }}
-                      />
-                      <div className="pl-4">
-                        <div>Roadster</div>
-                        <div>Men Grey Solid Padded Jacket</div>
-                        <div>Size: M</div>
-                      </div>
-                      <div className="fa fa-angle-right fa-lg  ml-auto"></div>
-                    </div>
-                    <div className="d-flex pb-3">
-                      <div
-                        className="btn btn-dark bg-white text-dark mx-3 align-items-center d-flex justify-content-center"
-                        style={{ fontSize:"14px",borderColor: "#ced4da",height:"30px", width: "100%", fontWeight:"500" }}
-                      >
-                        EXCHANGE
-                      </div>
-                      <div
-                        className="btn btn-dark bg-white text-dark mx-3 align-items-center d-flex justify-content-center"
-                        style={{ fontSize:"14px",borderColor: "#ced4da",height:"30px", width: "100%", fontWeight:"500" }}
-                      >
-                        RETURN
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    className="d-flex px-3 align-items-center"
-                    style={{ background: "#f5f5f5", marginTop: "2px" }}
-                  >
-                    <div style={{ color: "#696e79", fontSize:"12px" }}>Rate Product</div>
-                    <StarsRating
-                      className="float-lg-right pl-3 mb-1 sliderRate justify-content-center d-flex"
-                      count={5}
-                      onChange={(e) => console.log(e)}
-                      size={30}
-                      color2={"rgb(255, 63, 108)"}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="pb-3">
-              <div className="">
-                <div className="bg-white p-3">
-                  <div className="d-flex align-items-center" style={{fontSize:"14px"}}>
-                    <div
-                      className="fa fa-dropbox text-white align-items-center d-flex justify-content-center bg-dark fa-lg"
-                      style={{
-                        borderRadius: "50%",
-                        height: "35px",
-                        width: "35px",
-                      }}
-                    ></div>
-                    <div className="pl-3">
-                      <div className="text-info" style={{ fontWeight: "500" }}>
-                        Delivered
-                      </div>
-                      <div className="" style={{ fontSize: "12px" }}>
-                        On Tue, 15 Nov |{" "}
-                        <img src="https://myntraweb.blob.core.windows.net/selfserveui/assets/svg/mexpress-tag.svg" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    className="mt-4 deliveredCard"
-                    style={{ background: "#f5f5f5", transition: "0.3s", fontSize:"14px" }}
-                  >
-                    <div className="d-flex p-2 align-items-center">
-                      <img
-                        src={collections}
-                        style={{ height: "70px", width: "53px" }}
-                      />
-                      <div className="pl-4">
-                        <div>Roadster</div>
-                        <div>Men Grey Solid Padded Jacket</div>
-                        <div>Size: M</div>
-                      </div>
-                      <div className="fa fa-angle-right fa-lg  ml-auto"></div>
-                    </div>
-                    <div className="d-flex pb-3">
-                      <div
-                        className="btn btn-dark bg-white text-dark mx-3 align-items-center d-flex justify-content-center"
-                        style={{ fontSize:"14px",borderColor: "#ced4da",height:"30px", width: "100%", fontWeight:"500" }}
-                      >
-                        EXCHANGE
-                      </div>
-                      <div
-                        className="btn btn-dark bg-white text-dark mx-3 align-items-center d-flex justify-content-center"
-                        style={{ fontSize:"14px",borderColor: "#ced4da",height:"30px", width: "100%", fontWeight:"500" }}
-                      >
-                        RETURN
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    className="d-flex px-3 align-items-center"
-                    style={{ background: "#f5f5f5", marginTop: "2px" }}
-                  >
-                    <div style={{ color: "#696e79", fontSize:"12px" }}>Rate Product</div>
-                    <StarsRating
-                      className="float-lg-right pl-3 mb-1 sliderRate justify-content-center d-flex"
-                      count={5}
-                      onChange={(e) => console.log(e)}
-                      size={30}
-                      color2={"rgb(255, 63, 108)"}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

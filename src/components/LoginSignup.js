@@ -4,6 +4,7 @@ import loginImg from "./images/loginSignUp.webp";
 function LoginSignup() {
   useEffect(() => {
     document.getElementById("footer").style.display = "none";
+    document.body.style.background = "rgb(255 192 203 / 30%)";
     // document.getElementById("loginProfileIcon").style.display = "none";
   }, []);
 
@@ -13,15 +14,14 @@ function LoginSignup() {
         .
       </div>
       <div
-        className="justify-content-center align-items-center mt-lg-5 mt-4 d-flex"
-        style={{ height: "100vh", background: "rgb(255 192 203 / 30%)" }}
+        className="justify-content-center mt-5 align-items-center d-flex"
       >
         <div
           className="bg-white mx-3"
-          style={{ maxWidth: "400px", height: "80vh" }}
+          style={{ maxWidth: "400px", height: "70vh" }}
         >
           <img src={loginImg} className="img-fluid w-100" />
-          <div className="p-lg-5 p-md-5 p-3">
+          <div className="p-3">
             <div style={{ fontSize: "16px", color: "#535766" }}>
               <b style={{ color: "#424553", fontSize: "20px" }}>Login</b> or{" "}
               <b style={{ color: "#424553", fontSize: "20px" }}>Signup</b>

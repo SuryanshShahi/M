@@ -46,10 +46,11 @@ function Home() {
   window.scroll(0, 0);
   useEffect(()=>{
     document.getElementById("loginProfileIcon").style.display = "block";
+    document.body.style.background = "none";
   },[])
 
   return (
-    <div style={{ marginTop: "100px" }}>
+    <div>
     <div className="backdrop" id="backdrop">.</div>
       <div className="my-5">
         <Carousel>

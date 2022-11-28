@@ -6,6 +6,7 @@ function SignUp() {
   window.scroll(0, 0);
   useEffect(() => {
     document.getElementById("footer").style.display = "none";
+    document.body.style.background = "rgb(255 192 203 / 30%)";
     // document.getElementById("loginProfileIcon").style.display = "none";
   }, []);
   const setupAcc = () => {
@@ -19,11 +20,10 @@ function SignUp() {
         .
       </div>
       <div
-        className="justify-content-center align-items-center mt-lg-5 mt-4 d-flex"
-        style={{ minHeight: "100vh", background: "rgb(255 192 203 / 30%)" }}
+        className="justify-content-center mt-5 align-items-center d-flex"
       >
         <div
-          className="bg-white p-lg-4 p-md-4 p-3 mx-3 signupWidth"
+          className="bg-white p-3 mx-3 signupWidth"
           style={{ height: "fit-content", width: "500px" }}
         >
           <div className="mb-3" style={{ fontWeight: "600", fontSize: "18px" }}>
