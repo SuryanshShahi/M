@@ -1510,7 +1510,7 @@ function Profile() {
 
       <div className="modal fade " id="mymodal">
         <div className="modal-dialog m-0 modal-xl">
-          <div className="text-center">
+          <div className="justify-content-center d-flex">
             <div
               className="align-items-center text-white my-3 d-flex justify-content-center"
               style={{
@@ -1529,7 +1529,7 @@ function Profile() {
               &times;
             </div>
           </div>
-          <div className="modal-content">
+          <div className="modal-content" style={{ background: "#f5f5f5" }}>
             <div
               className="d-flex p-3 align-items-center"
               style={{
@@ -1554,13 +1554,7 @@ function Profile() {
                 Enroll Now
               </div>
             </div>
-            <div className="d-flex p-3">
-              <div>
-                <div style={{ fontSize: "18px", fontWeight: "600" }}>
-                  All Orders
-                </div>
-                <div style={{ fontSize: "14px" }}>from anytime</div>
-              </div>
+            <div className="d-flex p-3 mb-3 bg-white">
               <div className="d-flex align-items-center mr-3 position-relative ml-auto">
                 <div
                   className="fa fa-search pl-3"
@@ -1586,23 +1580,23 @@ function Profile() {
                 </div>
               </div>
             </div>
-            <div className="px-3 pb-3" style={{ background: "#f5f5f5" }}>
-              <div className="pt-3">
+            <div className="pb-3">
+              <div className="">
                 <div className="bg-white p-3">
-                  <div className="d-flex align-items-center">
+                  <div className="d-flex align-items-center" style={{fontSize:"14px"}}>
                     <div
                       className="fa fa-dropbox text-white align-items-center d-flex justify-content-center bg-dark fa-lg"
                       style={{
                         borderRadius: "50%",
-                        height: "50px",
-                        width: "50px",
+                        height: "35px",
+                        width: "35px",
                       }}
                     ></div>
                     <div className="pl-3">
                       <div className="text-info" style={{ fontWeight: "500" }}>
                         Delivered
                       </div>
-                      <div className="" style={{ fontSize: "14px" }}>
+                      <div className="" style={{ fontSize: "12px" }}>
                         On Tue, 15 Nov |{" "}
                         <img src="https://myntraweb.blob.core.windows.net/selfserveui/assets/svg/mexpress-tag.svg" />
                       </div>
@@ -1611,9 +1605,9 @@ function Profile() {
 
                   <div
                     className="mt-4 deliveredCard"
-                    style={{ background: "#f5f5f5", transition: "0.3s" }}
+                    style={{ background: "#f5f5f5", transition: "0.3s", fontSize:"14px" }}
                   >
-                    <div className="d-flex p-3 align-items-center">
+                    <div className="d-flex p-2 align-items-center">
                       <img
                         src={collections}
                         style={{ height: "70px", width: "53px" }}
@@ -1623,18 +1617,18 @@ function Profile() {
                         <div>Men Grey Solid Padded Jacket</div>
                         <div>Size: M</div>
                       </div>
-                      <div className="fa fa-angle-right fa-2x ml-auto"></div>
+                      <div className="fa fa-angle-right fa-lg  ml-auto"></div>
                     </div>
                     <div className="d-flex pb-3">
                       <div
-                        className="btn btn-dark bg-white text-dark mx-3"
-                        style={{ borderColor: "#ced4da", width: "100%" }}
+                        className="btn btn-dark bg-white text-dark mx-3 align-items-center d-flex justify-content-center"
+                        style={{ fontSize:"14px",borderColor: "#ced4da",height:"30px", width: "100%", fontWeight:"500" }}
                       >
                         EXCHANGE
                       </div>
                       <div
-                        className="btn btn-dark bg-white text-dark mx-3"
-                        style={{ borderColor: "#ced4da", width: "100%" }}
+                        className="btn btn-dark bg-white text-dark mx-3 align-items-center d-flex justify-content-center"
+                        style={{ fontSize:"14px",borderColor: "#ced4da",height:"30px", width: "100%", fontWeight:"500" }}
                       >
                         RETURN
                       </div>
@@ -1645,12 +1639,83 @@ function Profile() {
                     className="d-flex px-3 align-items-center"
                     style={{ background: "#f5f5f5", marginTop: "2px" }}
                   >
-                    <div style={{ color: "#696e79" }}>Rate Product</div>
+                    <div style={{ color: "#696e79", fontSize:"12px" }}>Rate Product</div>
                     <StarsRating
                       className="float-lg-right pl-3 mb-1 sliderRate justify-content-center d-flex"
                       count={5}
                       onChange={(e) => console.log(e)}
-                      size={35}
+                      size={30}
+                      color2={"rgb(255, 63, 108)"}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="pb-3">
+              <div className="">
+                <div className="bg-white p-3">
+                  <div className="d-flex align-items-center" style={{fontSize:"14px"}}>
+                    <div
+                      className="fa fa-dropbox text-white align-items-center d-flex justify-content-center bg-dark fa-lg"
+                      style={{
+                        borderRadius: "50%",
+                        height: "35px",
+                        width: "35px",
+                      }}
+                    ></div>
+                    <div className="pl-3">
+                      <div className="text-info" style={{ fontWeight: "500" }}>
+                        Delivered
+                      </div>
+                      <div className="" style={{ fontSize: "12px" }}>
+                        On Tue, 15 Nov |{" "}
+                        <img src="https://myntraweb.blob.core.windows.net/selfserveui/assets/svg/mexpress-tag.svg" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    className="mt-4 deliveredCard"
+                    style={{ background: "#f5f5f5", transition: "0.3s", fontSize:"14px" }}
+                  >
+                    <div className="d-flex p-2 align-items-center">
+                      <img
+                        src={collections}
+                        style={{ height: "70px", width: "53px" }}
+                      />
+                      <div className="pl-4">
+                        <div>Roadster</div>
+                        <div>Men Grey Solid Padded Jacket</div>
+                        <div>Size: M</div>
+                      </div>
+                      <div className="fa fa-angle-right fa-lg  ml-auto"></div>
+                    </div>
+                    <div className="d-flex pb-3">
+                      <div
+                        className="btn btn-dark bg-white text-dark mx-3 align-items-center d-flex justify-content-center"
+                        style={{ fontSize:"14px",borderColor: "#ced4da",height:"30px", width: "100%", fontWeight:"500" }}
+                      >
+                        EXCHANGE
+                      </div>
+                      <div
+                        className="btn btn-dark bg-white text-dark mx-3 align-items-center d-flex justify-content-center"
+                        style={{ fontSize:"14px",borderColor: "#ced4da",height:"30px", width: "100%", fontWeight:"500" }}
+                      >
+                        RETURN
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    className="d-flex px-3 align-items-center"
+                    style={{ background: "#f5f5f5", marginTop: "2px" }}
+                  >
+                    <div style={{ color: "#696e79", fontSize:"12px" }}>Rate Product</div>
+                    <StarsRating
+                      className="float-lg-right pl-3 mb-1 sliderRate justify-content-center d-flex"
+                      count={5}
+                      onChange={(e) => console.log(e)}
+                      size={30}
                       color2={"rgb(255, 63, 108)"}
                     />
                   </div>
