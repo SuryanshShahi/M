@@ -14,7 +14,7 @@ function CreateAcc() {
         .
       </div>
       <div
-        className="justify-content-center align-items-center mt-lg-5 mt-4 d-flex"
+        className="justify-content-center align-items-center mt-lg-5 d-flex"
         style={{ height: "100vh", background: "rgb(255 192 203 / 30%)" }}
       >
         <div
