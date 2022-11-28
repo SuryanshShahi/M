@@ -640,7 +640,7 @@ function Profile() {
                           fontSize: "14px",
                         }}
                       >
-                        MYNTRA CREDIT T&C >
+                        MYNTRA CREDIT T&C <span className="fa fa-angle-right fa-lg pl-2"></span>
                       </div>
                       <div
                         className="col-4 text-center"
@@ -650,7 +650,7 @@ function Profile() {
                           fontSize: "14px",
                         }}
                       >
-                        GIFT CARD T&C >
+                        GIFT CARD T&C <span className="fa fa-angle-right fa-lg pl-2"></span>
                       </div>
                       <div
                         className="col-4 text-center"
@@ -660,7 +660,7 @@ function Profile() {
                           fontSize: "14px",
                         }}
                       >
-                        FAQS >
+                        FAQS <span className="fa fa-angle-right fa-lg pl-2"></span>
                       </div>
                     </div>
                   </div>

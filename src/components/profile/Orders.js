@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import StarsRating from "stars-rating";
 import collections from "../images/profile-collections.png";
 
 function Orders() {
+    useEffect(() => {
+        document.getElementById("footer").style.display = "none";
+      }, []);
+      
   return (
     <section>
       <div className="" style={{ background: "#f5f5f5" }}>
