@@ -34,7 +34,7 @@ function Profile() {
       </div>
       <div
         className="container-lg container-fluid"
-        id="userProfile"
+        id="profile"
         style={{ marginTop: "170px" }}
       >
         <div className="mt-3" style={{ borderBottom: "1px solid #8080804d" }}>
@@ -46,7 +46,7 @@ function Profile() {
         <div className="d-flex">
           <div
             className="nav nav-tabs list-unstyled d-block pt-4"
-            style={{ width: "20vw", borderRight: "1px solid #8080804d" }}
+            style={{ width: "250px", borderRight: "1px solid #8080804d" }}
           >
             <li
               className="active tab"
@@ -755,7 +755,7 @@ function Profile() {
                         <td>0</td>
                         <td style={{ fontWeight: "600" }}>+ 70</td>
                       </tr>
-                      <tr >
+                      <tr>
                         <td className="tt">
                           Expiry: 23 Dec 2021 | 11:59:59 P.M
                         </td>
@@ -1300,6 +1300,202 @@ function Profile() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div id="mobileProfile" style={{ marginTop: "50px", background: "#eee", display:"none" }}>
+        <div className="d-flex justify-content-center">
+          <div
+            className="fa fa-user bg-dark justify-content-center d-flex align-items-end position-absolute"
+            style={{
+              fontSize: "110px",
+              color: "#eee",
+              top: "105px",
+              height: "130px",
+              width: "130px",
+            }}
+          ></div>
+        </div>
+       
+        <div
+          className="bg-white"
+          style={{
+            height: "10vh",
+            marginTop: "150px",
+            boxShadow: "0 0 4px rgb(40 44 63 / 8%)",
+          }}
+        ></div>
+      
+        <div
+          className="my-2 bg-white"
+          style={{ boxShadow: "0 0 4px rgb(40 44 63 / 8%)" }}
+        >
+          <div className="d-flex p-2 px-3 align-items-center">
+            <img src={orders} className="img-fluid" style={{ width: "25px" }} />
+            <div className="ml-3">
+              <div style={{ fontSize: "15px", fontWeight: "500" }}>Orders</div>
+              <div style={{ fontSize: "12px", color: "#94969F" }}>
+                Check your order status
+              </div>
+            </div>
+            <div className="fa fa-angle-right ml-auto"></div>
+          </div>
+          <hr className="m-0" style={{ color: "#A9ABB3" }}></hr>
+          <div className="d-flex p-2 px-3 align-items-center">
+            <img
+              src={collections}
+              className="img-fluid"
+              style={{ width: "25px" }}
+            />
+            <div className="ml-3">
+              <div style={{ fontSize: "15px", fontWeight: "500" }}>
+                Collections
+              </div>
+              <div style={{ fontSize: "12px", color: "#94969F" }}>
+                All your curated product collections
+              </div>
+            </div>
+            <div className="fa fa-angle-right ml-auto"></div>
+          </div>
+        </div>
+
+        <div
+          className="my-2 bg-white"
+          style={{ boxShadow: "0 0 4px rgb(40 44 63 / 8%)" }}
+        >
+          <div className="d-flex p-2 px-3 align-items-center">
+            <img src={credit} className="img-fluid" style={{ width: "25px" }} />
+            <div className="ml-3">
+              <div style={{ fontSize: "15px", fontWeight: "500" }}>
+                Myntra Credit
+              </div>
+              <div style={{ fontSize: "12px", color: "#94969F" }}>
+                Manage all your refunds & gift cards
+              </div>
+            </div>
+            <div className="fa fa-angle-right ml-auto"></div>
+          </div>
+          <hr className="m-0" style={{ color: "#A9ABB3" }}></hr>
+          <div className="d-flex p-2 px-3 align-items-center">
+            <img src={points} className="img-fluid" style={{ width: "25px" }} />
+            <div className="ml-3">
+              <div style={{ fontSize: "15px", fontWeight: "500" }}>MynCash</div>
+              <div style={{ fontSize: "12px", color: "#94969F" }}>
+                Earn MynCash as you shop and use them in checkout
+              </div>
+            </div>
+            <div className="fa fa-angle-right ml-auto"></div>
+          </div>
+          <hr className="m-0" style={{ color: "#A9ABB3" }}></hr>
+          <div className="d-flex p-2 px-3 align-items-center">
+            <img src={cards} className="img-fluid" style={{ width: "25px" }} />
+            <div className="ml-3">
+              <div style={{ fontSize: "15px", fontWeight: "500" }}>
+                Saved Cards
+              </div>
+              <div style={{ fontSize: "12px", color: "#94969F" }}>
+                Save your cards for faster checkout
+              </div>
+            </div>
+            <div className="fa fa-angle-right ml-auto"></div>
+          </div>
+          <hr className="m-0" style={{ color: "#A9ABB3" }}></hr>
+          <div className="d-flex p-2 px-3 align-items-center">
+            <img
+              src={upiIcon}
+              className="img-fluid"
+              style={{ width: "25px" }}
+            />
+            <div className="ml-3">
+              <div style={{ fontSize: "15px", fontWeight: "500" }}>
+                Saved VPA
+              </div>
+              <div style={{ fontSize: "12px", color: "#94969F" }}>
+                View your saved VPA
+              </div>
+            </div>
+            <div className="fa fa-angle-right ml-auto"></div>
+          </div>
+          <hr className="m-0" style={{ color: "#A9ABB3" }}></hr>
+          <div className="d-flex p-2 px-3 align-items-center">
+            <img
+              src={address}
+              className="img-fluid"
+              style={{ width: "25px" }}
+            />
+            <div className="ml-3">
+              <div style={{ fontSize: "15px", fontWeight: "500" }}>
+                Addresses
+              </div>
+              <div style={{ fontSize: "12px", color: "#94969F" }}>
+                Save addresses for a hassle-free checkout
+              </div>
+            </div>
+            <div className="fa fa-angle-right ml-auto"></div>
+          </div>
+          <hr className="m-0" style={{ color: "#A9ABB3" }}></hr>
+          <div className="d-flex p-2 px-3 align-items-center">
+            <img
+              src={coupons}
+              className="img-fluid"
+              style={{ width: "25px" }}
+            />
+            <div className="ml-3">
+              <div style={{ fontSize: "15px", fontWeight: "500" }}>Coupons</div>
+              <div style={{ fontSize: "12px", color: "#94969F" }}>
+                Manage coupons for additional discounts
+              </div>
+            </div>
+            <div className="fa fa-angle-right ml-auto"></div>
+          </div>
+        </div>
+
+        <div
+          className="my-2 bg-white"
+          style={{ boxShadow: "0 0 4px rgb(40 44 63 / 8%)" }}
+        >
+          <div className="d-flex p-2 px-3 align-items-center">
+            <img src={edit} className="img-fluid" style={{ width: "25px" }} />
+            <div className="ml-3">
+              <div style={{ fontSize: "15px", fontWeight: "500" }}>
+                Profile Details
+              </div>
+              <div style={{ fontSize: "12px", color: "#94969F" }}>
+                Chnage your profile details & password
+              </div>
+            </div>
+            <div className="fa fa-angle-right ml-auto"></div>
+          </div>
+        </div>
+
+        <div
+          className="my-2 bg-white"
+          style={{ boxShadow: "0 0 4px rgb(40 44 63 / 8%)", paddingLeft:"57px" }}
+        >
+          <div className="py-3" style={{ fontSize: "12px", fontWeight: "500" }}>
+            FAQs
+          </div>
+          <div className="py-3" style={{ fontSize: "12px", fontWeight: "500" }}>
+            ABOUT US
+          </div>
+          <div className="py-3" style={{ fontSize: "12px", fontWeight: "500" }}>
+            TERMS OF USE
+          </div>
+          <div className="py-3" style={{ fontSize: "12px", fontWeight: "500" }}>
+            CUSTOMER POLICIES
+          </div>
+          <div className="py-3" style={{ fontSize: "12px", fontWeight: "500" }}>
+            USEFUL LINKS
+          </div>
+        </div>
+
+        <div className="mt-5 px-3">
+                  <div
+                    className="btn w-100 btn-danger border-0 w-25 my-2 py-3"
+                    style={{ background: "#f91111d6" }}
+                  >
+                    <b>LOGOUT</b>
+                  </div>
+                </div>
       </div>
     </section>
   );

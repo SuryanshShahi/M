@@ -609,7 +609,7 @@ function Navbar() {
                   <NavLink
                     to="/"
                     className="nav-link text-dark homeLiving"
-                    style={{ fontWeight: "600", width: "127px" }}
+                    style={{ fontWeight: "600", width: "130px" }}
                     onMouseOver={() =>
                       (document.getElementById("h&l").style.borderBottom =
                         "4px solid #f2c210")
@@ -1443,7 +1443,8 @@ function Navbar() {
                   <div className="ml-auto fa fa-angle-right text-white"></div>
                 </div>
               </div>
-              <div className="position-relative" id="userNotLoggedIn">
+
+              <div className="position-relative" id="userNotLoggedIn" style={{display:"block"}}>
                 <div
                   className="ml-auto m-2 position-absolute pt-2 text-center"
                   style={{

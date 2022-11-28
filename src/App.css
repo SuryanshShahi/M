@@ -110,6 +110,14 @@ button:focus {
     padding: 15px 0px;
   }
 }
+@media (max-width: 765px) {
+  #profile {
+    display: none;
+  }
+  #mobileProfile{
+    display: block !important;
+  }
+}
 @keyframes fadeNav {
   0% {
     opacity: 0;
@@ -240,13 +248,13 @@ input[type="radio"] {
 }
 
 @media (min-width: 990px) {
-  .signupWidth{
+  .signupWidth {
     margin-top: 60px !important;
     margin-bottom: 30px !important;
   }
 }
 @media (max-width: 990px) {
-  .signupWidth{
+  .signupWidth {
     margin-top: 50px !important;
   }
   .bagpath {
