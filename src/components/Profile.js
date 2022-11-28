@@ -1304,7 +1304,7 @@ function Profile() {
 
       <div
         id="mobileProfile"
-        style={{ marginTop: "50px", background: "#eee", display: "none" }}
+        style={{background: "#eee", display: "none" }}
       >
         <div className="d-flex justify-content-center">
           <div
