@@ -4,7 +4,7 @@ import loginImg from "./images/loginSignUp.webp";
 function LoginSignup() {
   useEffect(() => {
     document.getElementById("footer").style.display = "none";
-    document.getElementById("loginProfileIcon").style.display = "none";
+    // document.getElementById("loginProfileIcon").style.display = "none";
   }, []);
 
   return (

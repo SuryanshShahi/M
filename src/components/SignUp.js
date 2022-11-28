@@ -6,7 +6,7 @@ function SignUp() {
   window.scroll(0, 0);
   useEffect(() => {
     document.getElementById("footer").style.display = "none";
-    document.getElementById("loginProfileIcon").style.display = "none";
+    // document.getElementById("loginProfileIcon").style.display = "none";
   }, []);
   const setupAcc = () => {
     document.getElementById("setupProfile").style.display = "block";

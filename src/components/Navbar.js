@@ -1463,7 +1463,7 @@ function Navbar() {
                 >
                 &times;
                 </div>
-                <NavLink to="/login">
+                <NavLink to="/login" onClick={closeDrawer}>
                   <img src={loginImg} className="img-fluid" />
                   <div
                     className="pl-3 position-absolute align-items-center d-flex"
