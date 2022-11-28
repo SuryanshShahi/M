@@ -46,11 +46,13 @@ function Navbar() {
     window.scroll(0, 0);
     document.getElementById("backdrop").style.display = "block";
     document.getElementById("backdrop").style.zIndex = "7";
+    document.getElementById("header").style.position = "unset";
     document.body.style.overflowY = "hidden";
     setShow(true);
   };
   const closeDrawer = () => {
     document.getElementById("backdrop").style.display = "none";
+    document.getElementById("header").style.position = "sticky";
     document.body.style.overflowY = "auto";
     setShow(false);
   };
@@ -61,9 +63,9 @@ function Navbar() {
   };
   return (
     <section
-      className="position-sticky"
+      className=""
       id="header"
-      style={{ zIndex: "6", top: "0" }}
+      style={{ zIndex: "6", top: "0", position: "sticky" }}
     >
       {!isactive ? (
         <nav
@@ -1193,8 +1195,9 @@ function Navbar() {
           </div>
         </nav>
       ) : (
-        <nav id="navbar"
-          className="navbar navbar-expand-lg fixed-top bg-white p-0 m-0 px-lg-5"
+        <nav
+          id="navbar"
+          className="navbar navbar-expand-lg bg-white p-0 m-0 px-lg-5"
           style={{ boxShadow: "0 4px 12px 0 rgb(0 0 0 / 5%)", zIndex: "6" }}
         >
           <div className="navbar-nav w-100 py-lg-3 px-3">
@@ -1469,18 +1472,20 @@ function Navbar() {
                 style={{ display: "block" }}
               >
                 <div
-                  className="ml-auto m-2 position-absolute pt-2 text-center"
+                  className="ml-auto m-2 position-absolute text-center"
                   style={{
                     background: "rgb(0,0,0,0.6)",
                     borderRadius: "50px",
+                    border:"2px solid black",
                     right: 0,
                     fontSize: "24px",
-                    width: "20px",
-                    height: "20px",
+                    width: "30px",
+                    height: "30px",
                     cursor: "pointer",
                     lineHeight: "0",
                     zIndex: "1",
                     color: "white",
+                    paddingTop: "11px",
                   }}
                   onClick={closeDrawer}
                 >

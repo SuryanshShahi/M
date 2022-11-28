@@ -52,7 +52,7 @@ function Home() {
   return (
     <div>
     <div className="backdrop" id="backdrop">.</div>
-      <div className="my-5">
+      <div className="my-lg-5 mb-5 mt-3">
         <Carousel>
           {Banner.map((e) => (
             <Carousel.Item interval="3000" key={e.id}>

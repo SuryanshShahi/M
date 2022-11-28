@@ -306,9 +306,6 @@ input[type="radio"] {
   #products .img-fluid {
     max-width: 70vw !important;
   }
-  #products {
-    margin-top: 70px !important;
-  }
 }
 
 @media (max-width: 350px) {
