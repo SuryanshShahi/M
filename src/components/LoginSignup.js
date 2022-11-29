@@ -27,7 +27,7 @@ function LoginSignup() {
               <b style={{ color: "#424553", fontSize: "20px" }}>Login</b> or{" "}
               <b style={{ color: "#424553", fontSize: "20px" }}>Signup</b>
             </div>
-            <form action="/createAccount" className="position-relative mt-4">
+            <form action="/otpLogin" className="position-relative mt-4">
               <div className="align-items-center d-flex">
                 <div
                   className="pl-2"

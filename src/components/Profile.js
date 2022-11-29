@@ -545,10 +545,10 @@ function Profile() {
                     className="p-4 mt-3"
                     style={{ boxShadow: "0 1px 2px 0 rgb(0 0 0 / 25%)" }}
                   >
-                    <div style={{ fontSize: "13px", fontWeight: "500" }}>
+                    <div className="text-center" style={{ fontSize: "13px", fontWeight: "500" }}>
                       TOP-UP YOUR MYNTRA CREDIT NOW!
                     </div>
-                    <div style={{ fontSize: "30px", fontWeight: "700" }}>
+                    <div className="text-center" style={{ fontSize: "30px", fontWeight: "700" }}>
                       {" "}
                       ₹0.00
                     </div>
