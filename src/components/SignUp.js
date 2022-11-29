@@ -20,10 +20,11 @@ function SignUp() {
         .
       </div>
       <div
-        className="justify-content-center mt-5 align-items-center d-flex"
+        className="justify-content-center mt-lg-5 mt-md-4 mt-sm-4 align-items-center d-flex"
       >
         <div
-          className="bg-white p-3 mx-3 signupWidth"
+        id="mobileView"
+          className="bg-white p-3 mx-lg-3 mx-md-3 mx-sm-3"
           style={{ height: "fit-content", width: "500px" }}
         >
           <div className="mb-3" style={{ fontWeight: "600", fontSize: "18px" }}>
@@ -162,11 +163,11 @@ function SignUp() {
             </div>
             <button
               type="submit"
-              className="btn btn-danger border-0 w-100 rounded-0 mt-4 py-2"
+              className="btn btn-danger border-0 w-100 rounded-0 mt-4 py-2 mb-2"
               style={{ background: "rgb(255, 63, 108)", fontWeight: "700" }}
               onClick={setupAcc}
             >
-              CONTINUE
+              CREATE ACCOUNT
             </button>
           </form>
         </div>

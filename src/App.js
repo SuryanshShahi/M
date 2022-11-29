@@ -22,6 +22,9 @@ import Vpa from "./components/profile/Vpa";
 import Addresses from "./components/profile/Addresses";
 import Coupons from "./components/profile/Coupons";
 import ProfileDetails from "./components/profile/ProfileDetails";
+import Otp from "./components/Otp";
+import LoginUsingPassword from "./components/LoginUsingPassword";
+import ResetPassword from "./components/ResetPassword";
 
 const App = () => {
   useEffect(() => {
@@ -49,6 +52,9 @@ const App = () => {
             <Route exact path="/address" component={Addresses} />
             <Route exact path="/coupons" component={Coupons} />
             <Route exact path="/editProfile" component={ProfileDetails} />
+            <Route exact path="/otpLogin" component={Otp} />
+            <Route exact path="/password" component={LoginUsingPassword} />
+            <Route exact path="/forgot" component={ResetPassword} />
           </div>
         </Switch>
         <Footer />

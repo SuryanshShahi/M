@@ -14,11 +14,12 @@ function LoginSignup() {
         .
       </div>
       <div
-        className="justify-content-center mt-5 align-items-center d-flex"
+        className="justify-content-center mt-lg-5 mt-md-4 mt-sm-4 align-items-center d-flex"
       >
         <div
+        id="mobileView"
           className="bg-white mx-3"
-          style={{ maxWidth: "400px", height: "70vh" }}
+          style={{ width: "400px", height: "70vh" }}
         >
           <img src={loginImg} className="img-fluid w-100" />
           <div className="p-3">

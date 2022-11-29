@@ -131,6 +131,13 @@ button:focus {
   .navbar-nav {
     padding: 15px 0px;
   }
+  #mobileView {
+    height: 100vh !important;
+    width: 100vw !important;
+    top: 0;
+    z-index: 6;
+    position: absolute;
+  }
 }
 @media (max-width: 765px) {
   #profile {
@@ -373,9 +380,24 @@ table .tt {
   cursor: pointer;
 }
 
-/* ------------------Signup----------------------- */
-@media (max-width: 760px) {
-  .signupWidth {
-    width: auto !important;
-  }
+/* ------------------Login----------------------- */
+
+.resendBtn button {
+  background-color: transparent !important;
+  border: 0;
+  left: 0;
+  position: absolute;
+  margin-left: 10px;
+  font-weight: 600;
+  opacity: 0;
+}
+#otpLogin input[type="tel"] {
+  border: 1px solid #d4d5d9;
+  height: 40px !important;
+  border-radius: 2px;
+  width: 30px !important;
+}
+#otpLogin input[type="tel"]:focus {
+  outline: none;
+  border: 1px solid black;
 }
