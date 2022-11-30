@@ -16,25 +16,28 @@ function Bag() {
     setLoading(false);
   };
 
-//   const getData = () => {
-//     axios
-//       .get(`https://fakestoreapi.com/products/${id}/`)
-//       .then((res) => {
-//         setItems(res.data);
-//         setLoading(false);
-//       })
-//       .catch((err) => {
-//         console.log(err);
-//       });
-//   };
+  //   const getData = () => {
+  //     axios
+  //       .get(`https://fakestoreapi.com/products/${id}/`)
+  //       .then((res) => {
+  //         setItems(res.data);
+  //         setLoading(false);
+  //       })
+  //       .catch((err) => {
+  //         console.log(err);
+  //       });
+  //   };
 
   useEffect(() => {
     getData();
     document.title = `SHOPPING BAG`;
+    document.body.style.background = "none";
   }, []);
   return (
     <section id="bag">
-    <div className="backdrop" id="backdrop">.</div>
+      <div className="backdrop" id="backdrop">
+        .
+      </div>
       <nav
         className="navbar navbar-expand-lg bg-white p-0 m-0 px-lg-5 px-md-5"
         style={{ borderBottom: "1px solid #d4d5d9" }}
@@ -244,7 +247,7 @@ function Bag() {
                         className="border-0 rounded mt-3"
                         style={{
                           outline: "none",
-                          cursor:"pointer",
+                          cursor: "pointer",
                           background: "rgb(212 213 217 / 43%)",
                           fontWeight: "500",
                         }}
@@ -263,7 +266,7 @@ function Bag() {
                         className="border-0 rounded my-2 ml-3"
                         style={{
                           outline: "none",
-                          cursor:"pointer",
+                          cursor: "pointer",
                           background: "rgb(212 213 217 / 43%)",
                           fontWeight: "500",
                         }}
