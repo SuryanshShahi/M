@@ -96,7 +96,7 @@ function Profile() {
             </div>
             <li
               className="tab py-1"
-              href="#profile"
+              href="#profile1"
               data-toggle="tab"
               type="button"
             >
@@ -994,7 +994,7 @@ function Profile() {
                 </div>
               </div>
 
-              <div id="profile" className="tab-pane fade">
+              <div id="profile1" className="tab-pane fade">
                 <div
                   className="justify-content-center d-flex py-5"
                   style={{ border: "1px solid #8080804d", width: "100%" }}
